@@ -1,0 +1,98 @@
+.news {
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	background-color: #f2eeed;
+	.news-inner {
+		display: flex;
+  		justify-content: center;
+  		align-items: center;
+	}
+	.the-post {
+		float: left;
+		padding: 1em;
+		&:nth-child(4){
+			margin-left: 0;
+		}
+		.post-pic {
+			height: 300px;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+			position: relative;
+			p {
+				position: absolute;
+				bottom: 0;
+				color: $bright;
+				font-family: $paraBold;
+				background-color: $paper;
+				padding: 0.5em;
+				margin-bottom: 0;
+			}
+		}
+		.post-inner-info {	
+			width: 100%;
+			h3 {
+				margin: 0;
+				a {
+					font-family: $header;
+					color: $bright;
+				}
+			}
+			p.tags {
+				color: $bright;
+				margin: 0;
+			}
+		}
+	}
+}
+
+.image-links {
+	display: flex;
+	justify-content: center;
+	align-items: center top;
+	height: auto;
+	height: 252px;
+	.images {
+		height: 252px;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		
+		display: -webkit-box;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -webkit-box-align: center;
+	    -ms-flex-align: center;
+	    align-items: center;
+	    -webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	    justify-content: center;
+	    border: 10px solid transparent;
+		box-shadow: inset 0 0 0 4px $dusty;
+		.links-inner {
+			text-align: center;
+			h3{
+				font-family: $para;
+				color: $bright;
+			}
+			p{
+				margin-bottom: 0;
+				color: $bright;
+			}
+		}
+	}
+}
+
+.upcoming-eps {
+	background: $dusty;
+	.upcoming-inner {
+		padding: 2em;
+		
+		color: $paper;
+	}
+}
+
+.row.twelve.columns.instagramDesktop {
+	background-color: $paper;
+}

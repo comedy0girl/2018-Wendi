@@ -1,0 +1,33 @@
+body {
+	background-color: $paper;
+	font-family: $links;
+	margin: 0;
+}
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+	display: inline;
+}
+
+.section-headers {
+	text-align: center;
+	margin-top: 1em;
+}
+
+.classic-button {
+	background-color: $dark;
+	padding: 1em;
+	color: $paper;
+	&:hover {
+		background: $title;
+		color: $dark;
+	}
+}
+
+.block {
+	display: inline-grid;
+}
+

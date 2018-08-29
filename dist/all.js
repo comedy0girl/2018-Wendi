@@ -1,0 +1,1 @@
+$(document).ready(function(){$("iframe").each(function(){$(this).removeAttr("width"),$(this).removeAttr("height"),$(this).wrap("<div class='videowrapper'></div>")})});

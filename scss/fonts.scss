@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'oswalddemibold';
+    src: url('../assets/fonts/oswald-demibold-webfont.woff2') format('woff2'),
+         url('../assets/fonts/oswald-demibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'oswalddemi-bold';
+    src: url('../assets/fonts/oswald-demi-bolditalic-webfont.woff2') format('woff2'),
+         url('../assets/fonts/oswald-demi-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'oswaldextralight';
+    src: url('../assets/fonts/oswald-extralight-webfont.woff2') format('woff2'),
+         url('../assets/fonts/oswald-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'oswaldextra-light';
+    src: url('../assets/fonts/oswald-extra-lightitalic-webfont.woff2') format('woff2'),
+         url('../assets/fonts/oswald-extra-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'oswaldlight';
+    src: url('../assets/fonts/oswald-light-webfont.woff2') format('woff2'),
+         url('../assets/fonts/oswald-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'oswaldmedium';
+    src: url('../assets/fonts/oswald-medium-webfont.woff2') format('woff2'),
+         url('../assets/fonts/oswald-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'oswald_regularregular';
+    src: url('../assets/fonts/oswald-regular-webfont.woff2') format('woff2'),
+         url('../assets/fonts/oswald-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'oswaldregular';
+    src: url('../assets/fonts/oswald-regularitalic-webfont.woff2') format('woff2'),
+         url('../assets/fonts/oswald-regularitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+
+
+$header:  'oswald_regularregular';
+$links:   'oswaldextralight';
+
+$thin:  'oswaldextralight';
+$para: 'oswald_regularregular';
+$paraBold:'oswaldregular';
+
+
+
+
+$typewriter: 'hartingplain';
+$slant: 'dehutibold-italic';
