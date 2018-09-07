@@ -1,0 +1,20 @@
+.galleryContainer {
+	dt.gallery-icon.landscape {
+		float: left;
+		opacity: 0.7;
+		&:hover {
+			opacity: 1;
+		}
+	}
+}
+
+
+
+
+.post-sidebar {
+	.sidebar-image {
+		img {
+			max-width: 70%;
+		}
+	}
+}

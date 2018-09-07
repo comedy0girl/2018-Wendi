@@ -2,15 +2,22 @@ body {
 	background-color: $paper;
 	font-family: $links;
 	margin: 0;
+	margin: 1em;
 }
 a {
 	text-decoration: none;
+}
+p {
+	font-size: 1.2em;
+	letter-space: 0.1rem;
 }
 
 li {
 	list-style: none;
 	display: inline;
 }
+
+body dl.gallery-item + br { display: none; }
 
 .section-headers {
 	text-align: center;
@@ -27,7 +34,26 @@ li {
 	}
 }
 
-.block {
-	display: inline-grid;
+
+.large-behind-text {
+	font-size: 16em !important;
+	font-family: $bold;
+	z-index: 0;
+	position: absolute;
+}
+
+h3.section-title {
+		z-index: 500;
+		position: relative;
+		width: 87%;
+    	margin: 1em auto;
+    	font-family: $bold;
+    	border-bottom: 1px solid $dark;
+    	
+
+	}
+
+.no-mobile {
+
 }
 

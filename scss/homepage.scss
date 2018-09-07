@@ -1,4 +1,80 @@
-.news {
+.news { 
+	background: $body;
+	min-height: 300px;
+	margin-bottom: 1em;
+	.large-behind-text {
+		color: $paper;
+		z-index: 0;
+		margin-top: -7rem;
+	}
+	
+	.the-post {
+		margin-top: 1em;
+		z-index: 500;
+		margin-left: 1%;
+		position: relative;
+		display: -webkit-box;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -webkit-box-align: center;
+	    -ms-flex-align: center;
+	    align-items: center;
+	    -webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	    justify-content: center;
+		h3 {
+			font-family: $bold;
+			margin-bottom: 0;
+			a{
+				color: $dark;
+			}
+		}
+		p.tags {
+			color: $title;
+			margin: 0;
+		}
+	}
+	.section-more {
+		a.section-btn {
+			background: $bright;
+			border: 1px solid $bright;
+			font-family: $para;
+			letter-spacing: 0.3rem;
+			text-transform: uppercase;
+			color: $paper;
+			padding: 1em 2em;
+			float: right;
+			margin: 0 3em 3em 0;
+			&:hover {
+				color: $dark;
+				border: 1px solid $bright;
+				background: transparent;
+
+			}
+		}
+	}
+}
+
+
+.image-links {
+	background: $title;
+	min-height: 400px;
+	margin-bottom: 1em;
+	.large-behind-text {
+		color: #cec192;
+		margin-top: -6.7rem;
+		width: 100%;
+	}
+	.the-links {
+		position: relative;
+	    margin: 0;
+	   
+	}	
+}
+
+
+
+.news-blog {
 	display: flex;
   	justify-content: center;
   	align-items: center;

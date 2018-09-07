@@ -1,7 +1,7 @@
 <div class="twelve columns upcoming-eps">
 	
-	<div class="offset-by-one nine columns upcoming-inner">
-	<h2>Next on The Goldbergs</h2><!-- <?php
+	<div class="wow animated slideInRight offset-by-one nine columns upcoming-inner" data-wow-duration="2s" >
+	<!-- <?php
 	    $my_id = 40;
 	    $post_id_40 = get_post($my_id, ARRAY_A);
 	    $title = $post_id_40['post_content']; ?> -->
