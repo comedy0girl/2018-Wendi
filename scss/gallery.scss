@@ -16,5 +16,15 @@
 		img {
 			max-width: 70%;
 		}
+		.gallery-box {
+			p{
+				color: $dark;
+				span {
+					color: $bright;
+					font-family: $header;
+				}
+
+			}
+		}
 	}
 }

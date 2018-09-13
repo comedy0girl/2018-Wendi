@@ -1,4 +1,6 @@
 <?php	
+	require_once('/includes/metaboxes.php');
+
 	add_action( 'after_setup_theme', 'setup' );
 	add_action( 'init', 'register_my_menus' );
 	add_filter( 'use_default_gallery_style', '__return_false' );
@@ -29,8 +31,6 @@
 	  );
 	}
 
-    
-
     // add arrows to menu parent 
     function oenology_add_menu_parent_class( $items ) {
      
@@ -52,13 +52,6 @@
     add_filter( 'wp_nav_menu_objects', 'oenology_add_menu_parent_class' );
 
 
-
-
-
-
-
-
-
 	//   Add responsive container to embeds
 	// /* ------------------------------------  
 	function alx_embed_html( $html ) {
@@ -68,6 +61,38 @@
     // Add custom tags to this string
         return '<script>,<style>,<iframe>,<br>,<em>,<i>,<ul>,<ol>,<li>,<a>,<p>,<video>,<audio>'; 
     }
+
+
+    //widgets
+	function footer_left() {
+
+		register_sidebar( array(
+			'name'          => 'Footer Left',
+			'id'            => 'footer-left',
+			'before_widget' => '<div>',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h2 class="rounded">',
+			'after_title'   => '</h2>',
+		) );
+
+	}
+	add_action( 'widgets_init', 'footer_left' );
+
+	function footer_right() {
+	add_action( 'widgets_init', 'arphabet_widgets_init' );
+	register_sidebar( array(
+			'name'          => 'Footer Right',
+			'id'            => 'footer-right',
+			'before_widget' => '<div>',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h2 class="rounded">',
+			'after_title'   => '</h2>',
+		) );
+
+	}
+	add_action( 'widgets_init', 'footer_right' );
+
+
 
 // if ( ! function_exists( 'wpse_custom_wp_trim_excerpt' ) ) : 
 //     function wpse_custom_wp_trim_excerpt($wpse_excerpt) {

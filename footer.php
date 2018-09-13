@@ -6,12 +6,7 @@
 			    <div class="footer-inner">
 			    	
 	        		<div class="four columns section">
-	        			<h3>Site Info</h3>
-	        			<p>Other biline</p>
-	        			<ul class="block">
-	        				<li><a href="#">Contact Us</a></li>
-	        				<li>Online Since: June 2012</li>
-	        			</ul>
+	        			<?php dynamic_sidebar( 'footer-left' ); ?>
 	        		</div>
 	        		<div class="four columns section">
 	        			
@@ -22,13 +17,7 @@
 	        			</ul>
 	        		</div>
 	        		<div class="four columns section">
-	        			<h3>The Goldnerds</h3>
-	        			<p>Other biline</p>
-	        			<ul class="block">
-	        				<li>Link</li>
-	        				<li>Link</li>
-	        				<li>Link</li>
-	        			</ul>
+	        			<?php dynamic_sidebar( 'footer-right' ); ?>
 	        		</div>
 			    </div>                  
 		  	</div>

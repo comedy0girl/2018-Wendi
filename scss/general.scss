@@ -57,3 +57,21 @@ h3.section-title {
 
 }
 
+.page-title {
+	background: $bright;
+	color: $paper;
+	text-align: center;
+	margin-bottom: 1em;
+	h1 {
+		font-family: $bold;
+		margin-bottom: 0;
+		span.light {
+			color: $dusty;
+		}
+		span.lighter {
+			color: paper;
+			font-family: $links;
+		}
+
+	}
+}
