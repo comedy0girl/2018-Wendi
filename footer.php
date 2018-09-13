@@ -1,7 +1,7 @@
         <footer>
     		<div class="twelve columns footer">
     			<div class="twelve columns">
-			    	<span class="footer"><h3>Wendi McLendon-Covey Fansite</h3></span>
+			    	<span class="footer"><h3>Wendi McLendon-Covey <span class="pretty-font">Fansite</span></h3></span>
 			    </div>
 			    <div class="footer-inner">
 			    	

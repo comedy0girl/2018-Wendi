@@ -9,7 +9,7 @@
 	function setup() {
 		add_theme_support( 'post-thumbnails' );
 		add_image_size( 'homepage-posts', 260, 400, true );
-		add_image_size( 'gallery', 175, 175, true );
+		add_image_size( 'gallery', 150, 150, true );
 
 		add_filter( 'image_size_names_choose', 'custom_image_sizes_choose' );
 

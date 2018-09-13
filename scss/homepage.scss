@@ -3,9 +3,12 @@
 	min-height: 300px;
 	margin-bottom: 1em;
 	.large-behind-text {
-		color: $paper;
-		z-index: 0;
-		margin-top: -7rem;
+		position: relative;
+		img {
+			max-width: 100%;
+			position: absolute;
+			top: 0;
+		}
 	}
 	
 	.the-post {
@@ -61,9 +64,12 @@
 	min-height: 400px;
 	margin-bottom: 1em;
 	.large-behind-text {
-		color: #cec192;
-		margin-top: -6.7rem;
-		width: 100%;
+		position: relative;
+		img {
+			max-width: 100%;
+			position: absolute;
+			top: 0;
+		}
 	}
 	.the-links {
 		position: relative;

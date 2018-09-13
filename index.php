@@ -15,11 +15,12 @@
 <div class="welcome-bottom">
 	<p>Your Fansite Source For Everything Wendi!</p>
 </div>
-
+khkhdkfshdfkhasklhj
 
 
 <div class="twelve columns news" id="latest-news">
-	<div class="large-behind-text">NEWS</div>
+	
+	<div class="large-behind-text"><img src="<?php bloginfo('template_url') ?>/assets/images/news.png"></div>
 
 
 		<h3 class="section-title">The Latest</h3><?php

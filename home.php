@@ -19,7 +19,7 @@
 
 
 <div class="twelve columns news" id="latest-news">
-	<div class="large-behind-text">NEWS</div>
+	<div class="large-behind-text"><img src="<?php bloginfo('template_url') ?>/assets/images/news.png"></div>
 
 
 		<h3 class="section-title">The Latest</h3><?php
@@ -55,7 +55,9 @@
 
 
 <div class="row twelve columns image-links">
-	<div class="large-behind-text">QUEEN WENDI</div>
+	<div  class="large-behind-text">
+		<img class="bg-text" src="<?php bloginfo('template_url') ?>/assets/images/queen.png">
+	</div>
 	<div class="wow animated slideInLeft ten columns the-links">
 		<h3 class="row section-title">Follow Wendi</h3>
 		<div class="four columns images" style="background-image: url('<?php bloginfo('template_url') ?>/assets/images/bio.jpg');">

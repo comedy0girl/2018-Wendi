@@ -13,7 +13,7 @@ $project_title = get_post_meta($post->ID, 'project_title', true);
 
 		<div class="inside galleryContent">
 			<div class="container">
-				<div class="nine columns galleryContainer">
+				<div class="eight columns galleryContainer">
 
                  <?php if ( have_posts() ) : 
                     while ( have_posts() ) : 
@@ -33,13 +33,13 @@ $project_title = get_post_meta($post->ID, 'project_title', true);
 						} ?>
 					</div> -->
 				</div>
-				<div class="three columns post-sidebar">
-					<div class="row page-title">
+				<div class="four columns post-sidebar">
+					<div class="page-title">
 						<h1>Wendi <span class="light">McLendon-Covey</span><span class="lighter"> Gallery</span></h1>
 					</div>
 					
 					<div class="sidebar-image">
-						<img src="<?php bloginfo('template_url') ?>/assets/images/wendi-sidebar.png">
+						<!-- <img src="<?php bloginfo('template_url') ?>/assets/images/wendi-sidebar.png"> -->
 
 						<div class="gallery-box">
 							<?php if (!empty($project_title)) : ?>

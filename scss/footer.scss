@@ -3,35 +3,52 @@
 	text-align: center;
 	color: $paper;
 	h3 {
-			padding: 1em;
-			color: $paper;
+		padding: 1em;
+		color: $paper;
+		font-family: $bold;
+		span.pretty-font {
+			color: $dusty;
+			font-family: $paraBold;
+		}
 	}
-	span.footer {
-		display: inline-block;
-  		position: relative;
-  		&:before,
-		&:after {
-		  content: "";
-		  position: absolute;
-		  height: 54px;
-		  border-bottom: 2px solid $bright;
-		  top: 0;
-		  width: 10%;
-		}
-		&:before {
-		  right: 10%;
-		  margin-right: 15px;
-		}
-		&:after {
-		  left: 10%;
-		  margin-left: 15px;
-		}
-		.section{
-			padding-top: 1em;
+	// span.footer {
+	// 	display: inline-block;
+ //  		position: relative;
+ //  		&:before,
+	// 	&:after {
+	// 	  content: "";
+	// 	  position: absolute;
+	// 	  height: 54px;
+	// 	  border-bottom: 2px solid $bright;
+	// 	  top: 0;
+	// 	  width: 10%;
+	// 	}
+	// 	&:before {
+	// 	  right: 10%;
+	// 	  margin-right: 15px;
+	// 	}
+	// 	&:after {
+	// 	  left: 10%;
+	// 	  margin-left: 15px;
+	// 	}
+	// 	.section{
+	// 		padding-top: 1em;
 			
-		}
-	}
+	// 	}
+	// }
 	.footer-inner {
+		.section {
+			p {
+				margin-bottom: 0;
+				font-family: $links;
+				letter-spacing: 0.03rem;
+			}
+			h2 {
+				font-family: $paraBold;
+				color: $dusty;
+				
+			}
+		}
 		ul.social-links {
 			margin-top: 2.5em;
 			li {

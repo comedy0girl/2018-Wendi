@@ -12,6 +12,16 @@
 
 
 .post-sidebar {
+	background-color: $paper;
+	text-align: center;
+	margin-top: 1em;
+	.page-title {
+		h1 {
+			font-size: 1.5em;
+			text-align: left;
+			padding: 1em;
+		}
+	}
 	.sidebar-image {
 		img {
 			max-width: 70%;
@@ -19,6 +29,10 @@
 		.gallery-box {
 			p{
 				color: $dark;
+				padding: 0;
+			    margin: 0;
+			    text-align: left;
+			    padding-left: 1em;
 				span {
 					color: $bright;
 					font-family: $header;
