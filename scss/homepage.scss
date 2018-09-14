@@ -14,7 +14,7 @@
 	.the-post {
 		margin-top: 1em;
 		z-index: 500;
-		margin-left: 1%;
+		margin-left: 2%;
 		position: relative;
 		display: -webkit-box;
 	    display: -ms-flexbox;
@@ -25,6 +25,7 @@
 	    -webkit-box-pack: center;
 	    -ms-flex-pack: center;
 	    justify-content: center;
+
 		h3 {
 			font-family: $bold;
 			margin-bottom: 0;
@@ -130,11 +131,10 @@
 }
 
 .image-links {
-	display: flex;
-	justify-content: center;
-	align-items: center top;
-	height: auto;
-	height: 252px;
+	background: #c0b283;
+    min-height: 400px;
+    margin-bottom: 1em;
+    position: relative;
 	.images {
 		height: 252px;
 		background-size: cover;

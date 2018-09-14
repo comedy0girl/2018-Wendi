@@ -38,6 +38,8 @@ function render_page_settings_metabox($post)
 	$season = get_post_meta($post->ID, 'season', true);
 	$episode = get_post_meta($post->ID, 'episode', true);
 	$airdate = get_post_meta($post->ID, 'airdate', true);
+
+	$releasedate = get_post_meta($post->ID, 'Realease Date', true);
 	 
 
 
@@ -46,6 +48,7 @@ function render_page_settings_metabox($post)
 	$episode = empty($episode) ? '' : $episode;
 	$airdate = empty($airdate) ? '' : $airdate;
 
+	$releasedate = empty($releasedate) ? '' : $releasedate;
 
 	 echo '<style type="text/css">.hide {display: none;}</style>';
 
@@ -81,6 +84,15 @@ function render_page_settings_metabox($post)
 	echo '		<th><label for="airdate">' . __('airdate', 'text_domain') . '</label></th>';
 	echo '		<td>';
 	echo '			<textarea id="airdate" name="airdate" class="regular-text" rows="1" >' . $airdate . '</textarea>';
+	echo '			<p class="description"></p>';
+	echo '		</td>';
+	echo '	</tr>';
+
+
+	echo '	<tr>';
+	echo '		<th><label for="releasedate">' . __('releasedate', 'text_domain') . '</label></th>';
+	echo '		<td>';
+	echo '			<textarea id="airdate" name="releasedate" class="regular-text" rows="1" >' . $releasedate . '</textarea>';
 	echo '			<p class="description"></p>';
 	echo '		</td>';
 	echo '	</tr>';
@@ -132,10 +144,12 @@ function save_page_settings_metabox($post_id, $post)
 	$season = empty($_POST['season']) ? '' : $_POST['season'];
 	$episode = empty($_POST['episode']) ? '' : $_POST['episode'];
 	$airdate = empty($_POST['airdate']) ? '' : $_POST['airdate'];
+	$releasedate = empty($_POST['releasedate']) ? '' : $_POST['releasedate'];
 
 	// Update the meta field in the database.
 	update_post_meta($post_id, 'project_title', $project_title);
 	update_post_meta($post_id, 'season', $season);
 	update_post_meta($post_id, 'episode', $episode);
 	update_post_meta($post_id, 'airdate', $airdate);
+	update_post_meta($post_id, 'releasedate', $releasedate);
 }

@@ -2,10 +2,10 @@
 
 <div class="twelve columns">
 	<div class="welcomeHero">
-		<div class="three columns wendi">
-			<image src="<?php bloginfo('template_url') ?>/assets/images/wendi-cutout.png">	
+		<div class="wendi">
+			<image src="<?php bloginfo('template_url') ?>/assets/images/new-wen.png">	
 		</div>
-		<div class="nine columns title">
+		<div class="title">
 			<h1>Wendi</h1>
 			<span class="light">McLendon-Covey</span><br>
 			<span class="fancy">Fansite</span>
