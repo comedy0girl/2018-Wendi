@@ -81,6 +81,23 @@
 	}
 }
 .welcome-bottom {
+	.mobile-title {
+		color: $paper;
+		font-size: 2em;
+		border-bottom: 1px solid $bright;
+		span.light {
+			color: #9e6b98;
+			opacity: 0.3;
+			
+			font-family: $bold;
+		}
+		span.fancy {
+			color: $paper;
+			font-family: $slant;
+			
+			text-align: right;
+		}
+	}
 	text-align: center;
 	background: $dark;
 	font-family: $links;

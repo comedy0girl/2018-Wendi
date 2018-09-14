@@ -5,14 +5,15 @@
 		<div class="wendi">
 			<image src="<?php bloginfo('template_url') ?>/assets/images/new-wen.png">	
 		</div>
-		<div class="title">
-			<h1>Wendi</h1>
+		<div class="title hide" >
+			<h1>Wendi
 			<span class="light">McLendon-Covey</span><br>
-			<span class="fancy">Fansite</span>
+			<span class="fancy">Fansite</span></h1>
 		</div>
 	
 	</div>
 	<div class="welcome-bottom">
+		<div class="mobile-title">Wendi <span class="light">McLendon-Covey</span> <span class="fancy">Fansite</span></div>
 		<p>Your Fansite Source For Everything Wendi!</p>
 	</div>
 
@@ -47,7 +48,9 @@
 								endif; ?>
 							<h3><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>
 
-							<p><?php echo the_excerpt() ?></p>
+							<a href="<?php echo get_permalink(); ?>">Read More..</a>
+
+							<!-- <p><?php echo the_excerpt() ?></p> -->
 							
 						</div>
 					</a>
