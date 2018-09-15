@@ -15,7 +15,7 @@
 <div class="welcome-bottom">
 	<p>Your Fansite Source For Everything Wendi!</p>
 </div>
-khkhdkfshdfkhasklhj
+
 
 
 <div class="twelve columns news" id="latest-news">
