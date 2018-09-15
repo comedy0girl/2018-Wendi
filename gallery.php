@@ -13,26 +13,7 @@ $project_title = get_post_meta($post->ID, 'project_title', true);
 
 		<div class="inside galleryContent">
 			<div class="container">
-				<div class="eight columns galleryContainer">
 
-                 <?php if ( have_posts() ) : 
-                    while ( have_posts() ) : 
-                            the_post(); 
-                                 the_content(); 
-                     endwhile; else : ?>
-                    <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-                <?php endif; ?>
-
-					<!-- <div class="slider">
-						<?php 
-						$images = get_attached_media('image', $post->ID);
-						foreach($images as $image) { ?>
-						   	<div>
-								<img src="<?php echo wp_get_attachment_image_src($image->ID,'full')[0]; ?>" />	
-							</div><?php 
-						} ?>
-					</div> -->
-				</div>
 				<div class="four columns post-sidebar">
 					<div class="page-title">
 						<h1>Wendi <span class="light">McLendon-Covey</span><span class="lighter"> Gallery</span></h1>
@@ -58,8 +39,61 @@ $project_title = get_post_meta($post->ID, 'project_title', true);
 						</div>
 					</div>
 				</div>
+
+				
+				<div class="eight columns galleryContainer">
+
+                 <?php if ( have_posts() ) : 
+                    while ( have_posts() ) : 
+                            the_post(); 
+                                 the_content(); 
+                     endwhile; else : ?>
+                    <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+                <?php endif; ?>
+
+					<!-- <div class="slider">
+						<?php 
+						$images = get_attached_media('image', $post->ID);
+						foreach($images as $image) { ?>
+						   	<div>
+								<img src="<?php echo wp_get_attachment_image_src($image->ID,'full')[0]; ?>" />	
+							</div><?php 
+						} ?>
+					</div> -->
+				</div>
+				
 			</div>
 	</div><!-- gallery container -->
+
+
+	<div class="row twelve posts-more ">
+       <?php
+$pagelist = get_pages('sort_column=menu_order&sort_order=asc');
+$pages = array();
+foreach ($pagelist as $page) {
+   $pages[] += $page->ID;
+}
+
+$current = array_search(get_the_ID(), $pages);
+$prevID = $pages[$current-1];
+$nextID = $pages[$current+1];
+?>
+
+<div class="navigation">
+<?php if (!empty($prevID)) { ?>
+<div class="alignleft">
+<a href="<?php echo get_permalink($prevID); ?>"
+  title="<?php echo get_the_title($prevID); ?>"><?php echo get_the_title($prevID); ?></a>
+</div>
+<?php }
+if (!empty($nextID)) { ?>
+<div class="alignright">
+<a href="<?php echo get_permalink($nextID); ?>" 
+ title="<?php echo get_the_title($nextID); ?>"><?php  echo get_the_title($nextID); ?></a>
+</div>
+<?php } ?>
+</div><!-- .navigation -->
+        </div>
 
 
 <?php get_footer(); ?>

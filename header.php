@@ -11,7 +11,7 @@
 </head>
 
 <?php
-	$post_id = $page->ID;
+	// $post_id = $page->ID;
 	
 if ( have_posts() ) : while ( have_posts() ) : the_post();
 	$project_title = get_post_meta($post->ID, 'project_title', true);

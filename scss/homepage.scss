@@ -38,9 +38,9 @@
 		}
 		}
 
-		h3 {
+		h5 {
 			font-family: $bold;
-			margin-bottom: 0;
+		
 			a{
 				color: $dark;
 			}
@@ -51,6 +51,7 @@
 		}
 	}
 	.section-more {
+		margin-top: 3em;
 		a.section-btn {
 			background: $bright;
 			border: 1px solid $bright;
@@ -60,7 +61,7 @@
 			color: $paper;
 			padding: 1em 2em;
 			float: right;
-			margin: 0 3em 3em 0;
+			
 			&:hover {
 				color: $dark;
 				border: 1px solid $bright;
@@ -193,9 +194,24 @@
 	.upcoming-inner {
 		padding: 4em 2em;
 		color: $paper;
+		h3.section-title {
+			width: 100%;
+		}
 	}
 }
 
-.row.twelve.columns.instagramDesktop {
-	background-color: $paper;
+.instagram {
+	background-color: $body;
+	text-align: center;
+	margin-bottom: 1em;
+	h3 {
+		padding-top: 0.5em;
+
+		a {
+			color: $dark;
+			&:hover {
+				color: $brighter;
+			}
+		}
+	}
 }

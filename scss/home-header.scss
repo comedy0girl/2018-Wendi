@@ -1,3 +1,27 @@
+.mobile-title {
+	background-color: $bright;
+	color: $paper;
+	font-size: 2em;
+	border-bottom: 1px solid $bright;
+	text-align: center;
+	line-height: 1em;
+	padding: 0.2em 0;
+	span.light {
+		color: #9e6b98;
+		opacity: 0.3;
+		
+		font-family: $bold;
+	}
+	span.fancy {
+		color: $paper;
+		font-family: $slant;
+		
+		text-align: right;
+	}
+}
+
+
+
 .welcomeHero {
 	background-color: $bright;
 	position: relative;
@@ -11,31 +35,35 @@
 			mix-blend-mode: luminosity;
 		}
 	}
-	h1 {
-		
-		font-family: $bold;
-		color: #b993b3;
-		font-size: 10em;
-		text-align: left;
-		margin-bottom: 0;
-		line-height: 0.8em;
-		opacity: 0.5;
 
-	}
-	span.light {
+
+	.title.hide {
+		width: 99%;
+		h1 {
+			text-align: left;
+			margin-bottom: 0;
+			line-height: 0.8em;
+			opacity: 0.5;
+			font-size: 10em;
+			float: right;
+		}
+		span.main {
+			color: #b993b3;
+			font-family: $bold;		
+		}
+		span.light {
 			color: #9e6b98;
 			opacity: 0.3;
-			font-size: 7em;
-			font-family: $bold;
+			
+			
 		}
 		span.fancy {
 			color: $paper;
 			font-family: $slant;
-			font-size: 7em;
+		
 			text-align: right;
 		}
-	
-
+	}
 }
 
 
@@ -81,23 +109,7 @@
 	}
 }
 .welcome-bottom {
-	.mobile-title {
-		color: $paper;
-		font-size: 2em;
-		border-bottom: 1px solid $bright;
-		span.light {
-			color: #9e6b98;
-			opacity: 0.3;
-			
-			font-family: $bold;
-		}
-		span.fancy {
-			color: $paper;
-			font-family: $slant;
-			
-			text-align: right;
-		}
-	}
+	
 	text-align: center;
 	background: $dark;
 	font-family: $links;

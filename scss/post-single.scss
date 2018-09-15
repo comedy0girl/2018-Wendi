@@ -1,12 +1,17 @@
-.post-side-image {
-	height: 300px;
-    background-position: center center;
-    background-size: cover;
+.news-container {
+	margin: 1em 0;
+	background-color: $body;
 }
 
 .single-post-text {
 	h1 {
 		color: $dark;
 		font-family: $bold;
+		margin-top: 1em;
+	}
+	.postDate {
+		color: $title;
+		font-weight: 500;
+		letter-spacing: 0.05em;
 	}
 }

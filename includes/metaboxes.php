@@ -105,27 +105,7 @@ function render_page_settings_metabox($post)
 function save_page_settings_metabox($post_id, $post)
 {
 
-	// Add nonce for security and authentication.
-	$nonce_name = $_POST['page_settings_nonce'];
-	$nonce_action = 'page_settings_nonce_action';
-
-	// Check if a nonce is set.
-	if (!isset($nonce_name))
-	{
-		return;
-	}
-
-	// Check if a nonce is valid.
-	if (!wp_verify_nonce($nonce_name, $nonce_action))
-	{
-		return;
-	}
-
-	// Check if the user has permissions to save data.
-	if (!current_user_can('edit_post', $post_id))
-	{
-		return;
-	}
+	
 
 	// Check if it's not an autosave.
 	if (wp_is_post_autosave($post_id))

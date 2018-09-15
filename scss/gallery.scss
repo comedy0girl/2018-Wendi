@@ -1,3 +1,28 @@
+/*** Upper Gallery ***/
+
+.main-galleryContainer {
+
+	.gallery-item{
+		position: relative;
+		dt.gallery-icon.landscape {
+			float: left;
+			position: relative;
+		}
+		.wp-caption-text.gallery-caption {
+		 	 position:absolute;
+	   background-color: $title;
+	   max-width: 100%; 
+		}
+	}
+	
+}
+
+
+
+
+
+/*** Lower Gallery ***/
+
 .galleryContainer {
 	dt.gallery-icon.landscape {
 		float: left;
@@ -7,10 +32,6 @@
 		}
 	}
 }
-
-
-
-
 .post-sidebar {
 	background-color: $paper;
 	text-align: center;
