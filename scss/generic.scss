@@ -1,0 +1,36 @@
+.page-general {
+	.generic-page {
+		ul {
+			li {
+				display: block;
+				padding: 0 1em;
+				font-size: 1.2em;
+				font-family: $bold;
+				a {
+					color: $dark;
+					&:hover {
+						color: $bright;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+.standard-content {
+	background-color: $body;
+	margin: 1em 0;
+	.content-inner {
+		padding: 1em 0;
+		.standard-inner {
+			h1{
+				margin: 1em auto;
+				font-family: $bold;
+				border-bottom: 1px solid $dark;
+				color: $dark;
+			}
+		}
+	}
+}

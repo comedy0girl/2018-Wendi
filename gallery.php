@@ -7,21 +7,16 @@ $project_title = get_post_meta($post->ID, 'project_title', true);
 	$airdate = get_post_meta($post->ID, 'airdate', true); ?>
 
 <?php get_header(); ?>
-<!-- <div class="row page-title">
-	<h1>Wendi <span class="light">McLendon-Covey</span><span class="lighter"> Gallery</span></h1>
-</div> -->
 
 		<div class="inside galleryContent">
 			<div class="container">
 
 				<div class="four columns post-sidebar">
 					<div class="page-title">
-						<h1>Wendi <span class="light">McLendon-Covey</span><span class="lighter"> Gallery</span></h1>
+						<h1>Wendi <span class="light">McLendon-Covey</span><span class="fancy"> Gallery</span></h1>
 					</div>
 					
 					<div class="sidebar-image">
-						<!-- <img src="<?php bloginfo('template_url') ?>/assets/images/wendi-sidebar.png"> -->
-
 						<div class="gallery-box">
 							<?php if (!empty($project_title)) : ?>
 								<p>Project: <span><?php echo $project_title ?></span></p>
@@ -50,50 +45,39 @@ $project_title = get_post_meta($post->ID, 'project_title', true);
                      endwhile; else : ?>
                     <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
                 <?php endif; ?>
-
-					<!-- <div class="slider">
-						<?php 
-						$images = get_attached_media('image', $post->ID);
-						foreach($images as $image) { ?>
-						   	<div>
-								<img src="<?php echo wp_get_attachment_image_src($image->ID,'full')[0]; ?>" />	
-							</div><?php 
-						} ?>
-					</div> -->
 				</div>
-				
 			</div>
-	</div><!-- gallery container -->
-
+	</div>
 
 	<div class="row twelve posts-more ">
-       <?php
-$pagelist = get_pages('sort_column=menu_order&sort_order=asc');
-$pages = array();
-foreach ($pagelist as $page) {
-   $pages[] += $page->ID;
-}
+		<h3 class="section-title">Wait, there's more...</h3>
+		<div class="more-inner"><?php
+			$pagelist = get_pages('sort_column=menu_order&sort_order=asc');
+			$pages = array();
+			foreach ($pagelist as $page) {
+			   $pages[] += $page->ID;
+			}
 
-$current = array_search(get_the_ID(), $pages);
-$prevID = $pages[$current-1];
-$nextID = $pages[$current+1];
-?>
+			$current = array_search(get_the_ID(), $pages);
+			$prevID = $pages[$current-1];
+			$nextID = $pages[$current+1];
+			?>
+			<?php if (!empty($prevID)) { ?>
+			<div class="one-half column left">
+				<p>Previous Gallery: <a href="<?php echo get_permalink($prevID); ?>"
+			  title="<?php echo get_the_title($prevID); ?>"><?php echo get_the_title($prevID); ?>	</a></p>
+			</div>
+			<?php }
+			if (!empty($nextID)) { ?>
+				<div class="one-half column right">
+						<p>Next Gallery: <a href="<?php echo get_permalink($nextID); ?>" 
+				 	title="<?php echo get_the_title($nextID); ?>"><?php  echo get_the_title($nextID); ?></a></p>
+				</div>
+			<?php } ?>
+			
+		</div>
+	</div>
 
-<div class="navigation">
-<?php if (!empty($prevID)) { ?>
-<div class="alignleft">
-<a href="<?php echo get_permalink($prevID); ?>"
-  title="<?php echo get_the_title($prevID); ?>"><?php echo get_the_title($prevID); ?></a>
-</div>
-<?php }
-if (!empty($nextID)) { ?>
-<div class="alignright">
-<a href="<?php echo get_permalink($nextID); ?>" 
- title="<?php echo get_the_title($nextID); ?>"><?php  echo get_the_title($nextID); ?></a>
-</div>
-<?php } ?>
-</div><!-- .navigation -->
-        </div>
 
 
 <?php get_footer(); ?>

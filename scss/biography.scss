@@ -1,0 +1,33 @@
+.biography {
+	background-color: $body;
+	margin: 1em 0;
+	.left {
+		height: 600px;
+		background-size: cover;
+		background-position: center;
+	}
+	.right {
+		padding-left: 1em;
+	}
+	.left, .right {
+		margin: 1em 0;
+	}
+}
+
+.fast-facts {
+	text-align: center;
+	h3 {
+		text-align: left;
+		border-bottom: 1px solid $dark;
+	}
+	
+	ul {
+		li{
+			display: block;
+			a {
+				color: $title;
+				font-family: $header;
+			}
+		}
+	}
+}

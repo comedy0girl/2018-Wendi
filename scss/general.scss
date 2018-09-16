@@ -8,8 +8,10 @@ a {
 	text-decoration: none;
 }
 p {
+	
 	font-size: 1.2em;
 	letter-spacing: 0.1rem;
+	
 }
 
 li {
@@ -43,15 +45,14 @@ body dl.gallery-item + br { display: none; }
 }
 
 h3.section-title {
-		z-index: 500;
-		position: relative;
-		width: 87%;
-    	margin: 1em auto;
-    	font-family: $bold;
-    	border-bottom: 1px solid $dark;
-    	
-
-	}
+	z-index: 500;
+	position: relative;
+	width: 87%;
+	margin: 1em auto;
+	font-family: $bold;
+	border-bottom: 1px solid $dark;
+	color: $dark;
+}
 
 .no-mobile {
 
@@ -62,14 +63,14 @@ h3.section-title {
 	color: $paper;
 	text-align: center;
 	margin-bottom: 1em;
-	h1 {
+	h1,h2 {
 		font-family: $bold;
 		margin-bottom: 0;
 		span.light {
 			color: $dusty;
 		}
-		span.lighter {
-			color: paper;
+		span.fancy {
+			color: $paper;
 			font-family: $links;
 		}
 	}
@@ -97,10 +98,29 @@ img.bg-text {
 		font-family: $links;
 	}
 	
-
-
 }
 
+
+.posts-more {
+	margin-bottom: 1em;
+	.more-inner {
+		width: 95%;
+		margin: 0 auto;
+		.left, .right {
+			a {
+				color: $title;
+				font-family: $new;
+				&:hover {
+					color: $bright;
+				}
+			}
+		}
+		.right {
+			text-align: right;
+		}
+	}
+	
+}
 
 @media only screen and (max-width: 600px) {
 	.hide {

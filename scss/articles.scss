@@ -1,0 +1,29 @@
+.articles-main {
+	background-color: $body;
+	padding: 1em 0;
+	.articles-main-container {
+
+		.article-one {
+			margin-bottom: 1em;
+			.tags {
+				font-family: $new;
+				color: $title;
+				border-bottom: 1px solid $title;
+			}
+			h4{
+				margin-bottom: 0;
+
+				a {
+					font-family: $header;
+					color: $dark;
+					&:hover {
+						color: $bright;
+					}
+				}
+				
+			}
+		}
+		
+	}
+
+}

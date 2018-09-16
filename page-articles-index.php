@@ -3,12 +3,12 @@
 
 <?php get_header(); ?>
 <div class="row page-title">
-	<h1>Wendi <span class="light">McLendon-Covey</span><span class="lighter"> Fansite</span></h1>
-</div> 
+    <h1>Wendi <span class="light">McLendon-Covey</span><span class="fancy"> Fansite</span></h1>
+</div>
 
 <div class="articles-main">
 	<div class="container">
-    	<div class="twelve columns main-galleryContainer"><?php
+    	<div class="twelve columns articles-main-container"><?php
  
             $args = array(
                 'post_type'      => 'page',
@@ -28,7 +28,7 @@
 
                         <div class="article-one">
 
-                            <div class="tags"><?php the_time('F') ?> <?php the_time('j') ?> <?php the_time('Y')?>  <h3><a href="<?php the_permalink(); ?>" title=" <?php the_title(); ?>"><?php the_title(); ?></a></h3>
+                            <div class="tags"><?php the_time('F') ?> <?php the_time('j') ?> <?php the_time('Y')?>  <h4><a href="<?php the_permalink(); ?>" title=" <?php the_title(); ?>"><?php the_title(); ?></a></h4>
                             </div>   
                         </div>
              

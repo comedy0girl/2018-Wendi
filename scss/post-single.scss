@@ -8,10 +8,16 @@
 		color: $dark;
 		font-family: $bold;
 		margin-top: 1em;
+		margin-bottom: 0;
+
 	}
 	.postDate {
 		color: $title;
 		font-weight: 500;
 		letter-spacing: 0.05em;
+		font-family: $new;
+		margin-bottom: 1em;
 	}
 }
+
+

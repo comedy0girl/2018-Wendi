@@ -2,7 +2,13 @@
 <?php get_header(); ?>
 
 <div class="twelve columns">
-	<div class="mobile-title">Wendi <span class="light">McLendon-Covey</span> <span class="fancy">Fansite</span></div>
+	<div class="mobile-title">
+		<h1>Wendi <span class="light">McLendon-Covey</span><span class="lighter"> Gallery</span></h1>
+	</div>
+
+
+
+
 	<div class="welcomeHero">
 		<div class="wendi">
 			<image src="<?php bloginfo('template_url') ?>/assets/images/new-wen.png">	
@@ -29,11 +35,16 @@
 				<div class="three columns the-post"><?php 
 				$backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
 					<div class="post-inner-info">
-						<p class="tags"><?php the_time('F') ?> <?php the_time('j') ?> <?php the_time('Y')?> / <?php	
-							$categories = get_the_category();
-								if ( ! empty( $categories ) ) {
-								    echo esc_html( $categories[0]->name );   
-								} ?>
+						<p class="tags"><?php the_time('F') ?> <?php the_time('j') ?> <?php the_time('Y')?> / <?php the_category(', '); ?>
+
+
+
+
+
+
+
+
+
 						</p> 
 						<div class="post-pic"style="background-image:url('<?php echo $backgroundImg[0]; ?>');"></div>
 						

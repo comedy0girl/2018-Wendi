@@ -23,6 +23,28 @@
                 <?php endif; ?>
 			</div>
 		</div>
-	</div><!-- gallery container -->
-	
+	</div>
+	<div class="row twelve columns fast-facts">
+		<h3 class="section-title">Wendi Fast Facts</h3>
+		<div class="four columns left">
+			<ul>
+				<li>Birthday: October 10th</li>
+				<li>Birthplace: Bellflower, California</li>
+			</ul>
+		</div>
+		<div class="four columns center">
+			<ul>
+				<li>Twitter: <a href="https://twitter.com/wendimclendonco">@wendimclendonco</a></li>
+				<li>Instagram: <a href="https://www.instagram.com/wendi_mclendon_covey/">@wendi_mclendon_covey/</a></li>
+				<li>Tumblr: <a href="http://wendimc.tumblr.com/">wendimc.tumblr.com/</a></li>
+			</ul>
+		</div>
+		<div class="four columns right">
+			<ul>
+				<li>IMDB: <a href="https://www.imdb.com/name/nm1018488/"> Profile</a></li>
+				<li>Wikipedia: <a href="https://en.wikipedia.org/wiki/Wendi_McLendon-Covey"> Page</a></li>
+			</ul>
+		</div>
+	</div>
+
 <?php get_footer(); ?>

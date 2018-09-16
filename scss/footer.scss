@@ -11,31 +11,23 @@
 			font-family: $paraBold;
 		}
 	}
-	// span.footer {
-	// 	display: inline-block;
- //  		position: relative;
- //  		&:before,
-	// 	&:after {
-	// 	  content: "";
-	// 	  position: absolute;
-	// 	  height: 54px;
-	// 	  border-bottom: 2px solid $bright;
-	// 	  top: 0;
-	// 	  width: 10%;
-	// 	}
-	// 	&:before {
-	// 	  right: 10%;
-	// 	  margin-right: 15px;
-	// 	}
-	// 	&:after {
-	// 	  left: 10%;
-	// 	  margin-left: 15px;
-	// 	}
-	// 	.section{
-	// 		padding-top: 1em;
-			
-	// 	}
-	// }
+	span.footer {
+			text-align: center;
+			margin-bottom: 1em;
+			h3 {
+				font-family: $bold;
+				margin-bottom: 0;
+				span.light {
+					color: $dusty;
+				}
+				span.fancy {
+					color: paper;
+					font-family: $links;
+				}
+			}
+		}
+
+	
 	.footer-inner {
 		.section {
 			padding-bottom: 3em;

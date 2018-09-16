@@ -25,7 +25,9 @@
 	</div><!--news container end -->
 
 
-	<div class="row twelve posts-more "><?php
+	<div class="row twelve posts-more ">
+        <h3 class="section-title">Carry On....</h3>
+        <div class="more-inner"><?php
             $prevPost = get_previous_post(true);
             $nextPost = get_next_post(true); ?>
 
@@ -40,11 +42,8 @@
                 foreach ($prevPost as $post) {
                     setup_postdata($post); ?>
                 <div class="post-previous">
-                    <div class="prev-img">
-                        <a href="<?php the_permalink(); ?>">
-                    <?php the_post_thumbnail('thumbnail'); ?></a>
-                    </div>
-                    <p><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
+                   
+                    <p>Previous: <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
                 </div>
 
             </div><?php
@@ -62,15 +61,13 @@
                 setup_postdata($post); ?>
             <div class="one-half column right">
                 <div class="post-next">
-                    <div class="prev-img">
-                        <a href="<?php the_permalink(); ?>">
-                        <?php the_post_thumbnail('thumbnail'); ?></a>
-                    </div>
-                    <p><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
+                    
+                    <p>Next:<a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></p>
                 </div>
             </div><?php
                 wp_reset_postdata();
             } 
             } ?>
         </div>
+    </div>
 <?php get_footer(); ?>

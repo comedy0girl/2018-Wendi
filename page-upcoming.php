@@ -3,13 +3,15 @@
     /* Template Name: Upcoming Episodes */
  
 get_header(); ?>
+<div class="row page-title">
+    <h2>Wendi <span class="light">McLendon-Covey</span><span class="fancy"> Fansite</span></h2>
+</div> 
 
-
-<div class="twelve columns content">
+<div class="twelve columns standard-content">
 
         <div class="offset-by-one ten columns content-inner">
   
-            <div class="gallery-inner">
+            <div class="standard-inner">
                  <?php if ( have_posts() ) : 
                     while ( have_posts() ) : 
                             the_post(); 
