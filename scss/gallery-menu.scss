@@ -1,0 +1,11 @@
+ul {
+	
+	li.page_item_has_children {
+		display: block;
+		ul.children {
+			li.page_item {
+				display: block;
+			}
+		}
+	}
+}
