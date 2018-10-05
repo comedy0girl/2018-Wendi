@@ -67,7 +67,7 @@
 	include (TEMPLATEPATH . '/includes/_upcoming.php'); ?>
 
 
-	<div class="row twelve columns image-links">
+	<div class="row twelve columns image-links container">
 		<div  class="large-behind-text">
 			<img class="bg-text" src="<?php bloginfo('template_url') ?>/assets/images/queen.png">
 		</div>
@@ -94,12 +94,17 @@
 		</div>
 	</div>
 
+
 	<div class="row twelve columns instagram no-mobile">
 			<h3> <span><i class="fa fa-instagram black"></i>  <a href="">@wendimc_fansite</a></span></h3>
 	  		<div class="row twelve columns" id="instafeed">
 	   		 <!-- LightWidget WIDGET --><script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe id="instagram" src="//lightwidget.com/widgets/7cb700b4ad1253dd8f7c7c9a98c07256.html" id="lightwidget_7cb700b4ad" name="lightwidget_7cb700b4ad"  scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
 			</div>
 	</div>
+
+	
+
+
 </div>
 
 

@@ -1,6 +1,6 @@
-<!-- <div class="twelve columns latest-images">
+<div class="twelve columns latest-images">
 	<?php
-$args = array( 'post_type' => 'attachment', 'posts_per_page' => -1, 'post_status' => 'any', 'post_parent' => 7, 'posts_per_page'   => 8 ); 
+$args = array( 'post_type' => 'attachment', 'posts_per_page' => -1, 'post_status' => 'any', 'post_parent' => 9, 'posts_per_page'   => 8 ); 
 $attachments = get_posts( $args );
 if ( $attachments ) {
     foreach ( $attachments as $post ) {
@@ -15,4 +15,4 @@ if ( $attachments ) {
     wp_reset_postdata();
 }
 ?>
-</div> -->
+</div> 
