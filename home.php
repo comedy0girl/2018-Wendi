@@ -1,7 +1,7 @@
 <?php /*Template Name: Blog Home*/ ?>
 
 <?php get_header(); ?>
-<div class="row twelve columns website-title"><h3>Wendi <span class="light">McLendon-Covey</span> <span class="fancy">Fansite</span></h3></div>
+<div class="row twelve columns website-title"><h1>Wendi <span class="light">McLendon-Covey</span><span class="lighter"> Gallery</span></h1></div>
 
 <div class="twelve columns news-blog ">
 	<div class="container"><?php 

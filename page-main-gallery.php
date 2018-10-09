@@ -8,7 +8,7 @@
 
 <div class="galleryContent">
 	<div class="container">
-		<div class="twelve columns main-galleryContainer">
+		<div class="ten columns main-galleryContainer">
 
          <?php if ( have_posts() ) : 
             while ( have_posts() ) : 
@@ -18,14 +18,9 @@
             <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
         <?php endif; ?>
 		</div>
-	</div>
-</div><!-- gallery container -->
 
-
-
-<div class="twelve columns"><?php
-if(is_page())
-{
+        <div class="two columns the-sidebar-gallery"><?php
+if(is_page()) {
     //Assuming current working page is the parent
     //
     $the_parent_id = $post->ID;
@@ -67,9 +62,23 @@ if(is_page())
     $output .= '</ul>';
     $output = apply_filters('wp_list_pages', $output, $page_walk_defaults);
     echo $output;
-}
-?>
+} ?>
 </div>
+
+
+
+
+
+
+
+
+
+
+	</div>
+</div><!-- gallery container -->
+
+
+
 
 
 	

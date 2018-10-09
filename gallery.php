@@ -50,7 +50,7 @@ $project_title = get_post_meta($post->ID, 'project_title', true);
 	</div>
 
 	<div class="row twelve posts-more ">
-		<h3 class="section-title">Wait, there's more...</h3>
+		<h3 class="bottom-section-title">Wait, there's more...</h3>
 		<div class="more-inner"><?php
 			$pagelist = get_pages('sort_column=menu_order&sort_order=asc');
 			$pages = array();

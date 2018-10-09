@@ -9,6 +9,14 @@
 		font-family: $bold;
 		margin-top: 1em;
 		margin-bottom: 0;
+		img {
+				max-width: 100%;
+			}
+		p {
+			img {
+				max-width: 100%;
+			}
+		}
 
 	}
 	.postDate {

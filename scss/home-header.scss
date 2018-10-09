@@ -9,13 +9,11 @@
 	span.light {
 		color: #9e6b98;
 		opacity: 0.3;
-		
 		font-family: $bold;
 	}
 	span.fancy {
 		color: $paper;
-		font-family: $slant;
-		
+		font-family: $links;
 		text-align: right;
 	}
 }
@@ -54,12 +52,11 @@
 		span.light {
 			color: #9e6b98;
 			opacity: 0.3;
-			
-			
+			font-family: $bold;
 		}
 		span.fancy {
 			color: $paper;
-			font-family: $slant;
+			font-family: $links;
 		
 			text-align: right;
 		}

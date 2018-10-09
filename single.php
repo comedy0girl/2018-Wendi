@@ -2,9 +2,8 @@
 <div class="row twelve columns website-title"><h3>Wendi <span class="light">McLendon-Covey</span> <span class="fancy">Fansite</span></h3></div>
 	<div class="news-container twelve columns"><?php 
 		if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-			<div class="offset-by-one nine columns single-post-text" ><?php
-				$backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
-		  		<div class="post-pic"style="background-image:url('<?php echo $backgroundImg[0]; ?>');"></div>
+			<div class="offset-by-one nine columns single-post-text">
+			
 				<h1><?php the_title(); ?></h1>
 				<div class="postInfo">
 					<div class="postDate">

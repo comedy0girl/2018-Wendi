@@ -35,7 +35,11 @@
 				<div class="three columns the-post"><?php 
 				$backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
 					<div class="post-inner-info">
-						<p class="tags"><?php the_time('F') ?> <?php the_time('j') ?> <?php the_time('Y')?> / <?php the_category(', '); ?>
+						<p class="tags"><?php the_time('F') ?> <?php the_time('j') ?> <?php the_time('Y')?> / <span><?php	$categories = get_the_category();
+									if ( ! empty( $categories ) ) {
+									    echo esc_html( $categories[0]->name );   
+									} 
+								?></span>
 
 
 
@@ -71,7 +75,7 @@
 		<div  class="large-behind-text">
 			<img class="bg-text" src="<?php bloginfo('template_url') ?>/assets/images/queen.png">
 		</div>
-		<div class="wow animated slideInLeft ten columns the-links">
+		<div class="wow animated slideInLeft twelve columns the-links">
 			<h3 class="row section-title">Follow Wendi</h3>
 			<div class="four columns images" style="background-image: url('<?php bloginfo('template_url') ?>/assets/images/bio.jpg');">
 				<div class="links-inner">
