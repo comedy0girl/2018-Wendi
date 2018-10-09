@@ -40,15 +40,6 @@
 									    echo esc_html( $categories[0]->name );   
 									} 
 								?></span>
-
-
-
-
-
-
-
-
-
 						</p> 
 						<div class="post-pic"style="background-image:url('<?php echo $backgroundImg[0]; ?>');"></div>
 						
@@ -105,17 +96,6 @@
 	   		 <!-- LightWidget WIDGET --><script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe id="instagram" src="//lightwidget.com/widgets/7cb700b4ad1253dd8f7c7c9a98c07256.html" id="lightwidget_7cb700b4ad" name="lightwidget_7cb700b4ad"  scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
 			</div>
 	</div>
-
-	
-
-
 </div>
 
-
-
 <?php get_footer(); ?> 
-
-
-
-
-
