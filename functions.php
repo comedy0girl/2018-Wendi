@@ -1,6 +1,5 @@
 <?php	
-	require_once('/includes/metaboxes.php');
-
+	
 	add_action( 'after_setup_theme', 'setup' );
 	add_action( 'init', 'register_my_menus' );
 	add_filter( 'use_default_gallery_style', '__return_false' );

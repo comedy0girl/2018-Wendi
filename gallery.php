@@ -1,10 +1,6 @@
 <?php /*Template Name: lower-gallery*/ ?>
 
-<?php
-$project_title = get_post_meta($post->ID, 'project_title', true);
-	$season = get_post_meta($post->ID, 'season', true);
-	$episode = get_post_meta($post->ID, 'episode', true);
-	$airdate = get_post_meta($post->ID, 'airdate', true); ?>
+<
 
 <?php get_header(); ?>
 
@@ -18,19 +14,7 @@ $project_title = get_post_meta($post->ID, 'project_title', true);
 					
 					<div class="sidebar-image">
 						<div class="gallery-box">
-							<?php if (!empty($project_title)) : ?>
-								<p>Project: <span><?php echo $project_title ?></span></p>
-							<?php endif ?>
-							<?php if (!empty($season)) : ?>
-								<p>Season: <span><?php echo $season ?></span></p>
-							<?php endif ?>
-							<?php if (!empty($episode)) : ?>
-								<p>Episode: <span><?php echo $episode ?></span></p>
-							<?php endif ?>
-							<?php if (!empty($airdate)) : ?>
-								<p>Airdate: <span><?php echo $airdate ?></span></p>
-							<?php endif ?>
-
+							
 						</div>
 					</div>
 				</div>
