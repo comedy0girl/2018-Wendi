@@ -39,7 +39,12 @@
 			h2 {
 				font-family: $paraBold;
 				color: $dusty;
-				
+			}
+			a{
+				color: $paper;
+				&:hover {
+					color: $dusty;
+				}
 			}
 		}
 		ul.social-links {
@@ -49,6 +54,12 @@
 				margin: 0 1em;
 				.fa {
 					font-size: 2em;
+					a{
+						color: $paper;
+						&:hover {
+							color: $dusty;
+						}
+					}
 				}
 			}
 		}

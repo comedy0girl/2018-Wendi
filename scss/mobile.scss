@@ -7,3 +7,25 @@
 	}
 	
 }
+
+
+@media only screen and (max-width: 750px) { 
+	.no-mobile {
+		display: none;
+	}
+	.news {
+		.the-post {
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			margin-bottom: 2em;
+
+			.post-inner-info {
+				padding: 0;
+				margin: 0;
+				padding: 1em;
+			}
+		}
+	}
+
+}

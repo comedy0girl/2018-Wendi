@@ -13,10 +13,12 @@
 		.wp-caption-text.gallery-caption {
 		 	position:absolute;
 	   		background-color: $title;
+			font-family: $header;
 	  		width: 100%; 
 	  		bottom: 0;
 	  		margin-left: 0;
 	  		text-align: center;
+	  		text-transform: uppercase;
 		}
 	}
 
@@ -26,9 +28,15 @@
 .the-sidebar-gallery {
 	ul {
 		li.page_item_has_children {
+			color: $bright;
+			font-size: 1em;
+			font-family: $header;
+			text-transform: uppercase;
 			a {
 				color: $bright;
 				font-size: 1em;
+				text-transform: uppercase;
+				font-family: $header;
 			}
 			ul.children {
 				display: none;

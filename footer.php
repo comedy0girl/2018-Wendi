@@ -11,9 +11,9 @@
 	        		<div class="four columns section">
 	        			
 	        			<ul class="social-links">
-	        				<li><i class="fa fa-instagram black"></i></li>
-	        				<li><i class="fa fa-facebook-square"></i></li>
-	        				<li><i class="fa fa-twitter-square"></i></li>
+	        				<li><a href=""><i class="fa fa-instagram black"></i></a></li>
+	        				<li><a href=""><i class="fa fa-facebook-square"></i></a></li>
+	        				<li><a href=""><i class="fa fa-twitter-square"></i></a></li>
 	        			</ul>
 	        		</div>
 	        		<div class="four columns section">

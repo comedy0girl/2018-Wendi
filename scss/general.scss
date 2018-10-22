@@ -3,6 +3,7 @@ body {
 	font-family: $links;
 	margin: 0;
 	margin: 1em;
+	-webkit-font-smoothing: antialiased;
 }
 a {
 	text-decoration: none;
