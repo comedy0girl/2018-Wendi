@@ -10,6 +10,13 @@
 
 
 @media only screen and (max-width: 750px) { 
+
+	.title.hide {
+		display: none;
+	}
+	.mobile-title {
+		display: block;
+	}
 	.no-mobile {
 		display: none;
 	}
@@ -28,4 +35,56 @@
 		}
 	}
 
+	.galleryContent {
+		.main-galleryContainer {
+			width: 100%;
+			margin-left: 8.6666666666667%;
+		}
+	}
+	footer {
+		.footer-inner {
+			.section {
+				width: 100%;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 600px) { 
+	.mobile-title {
+		h1 {
+			font-size: 4rem;
+		}
+	}
+	.image-links {
+		margin: 0;
+		.the-links {
+			margin: 0;
+			.images {
+				width: 100%;
+				margin: 0;
+				margin-bottom: 1em;
+			}
+		}
+		
+	}
+}
+
+@media only screen and (max-width: 470px) { 
+	.mobile-title {
+		h1 {
+			font-size: 3.5rem;
+		}
+	}
+}
+
+@media only screen and (max-width: 400px) { 
+	.mobile-title {
+		h1 {
+			font-size: 3rem;
+		}
+	}
+	.welcomeHero {
+		height: 345px;
+	}
 }

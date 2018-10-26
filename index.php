@@ -3,7 +3,7 @@
 
 <div class="twelve columns">
 	<div class="mobile-title">
-		<h1>Wendi <span class="light">McLendon-Covey</span><span class="lighter"> Gallery</span></h1>
+		<h1>Wendi <span class="light">McLendon-Covey</span><span class="lighter"> Fansite</span></h1>
 	</div>
 
 
@@ -62,25 +62,25 @@
 	include (TEMPLATEPATH . '/includes/_upcoming.php'); ?>
 
 
-	<div class="row twelve columns image-links container">
+	<div class="row twelve columns image-links">
 		<div  class="large-behind-text">
 			<img class="bg-text" src="<?php bloginfo('template_url') ?>/assets/images/queen.png">
 		</div>
-		<div class="wow animated slideInLeft twelve columns the-links">
+		<div class="twelve columns the-links">
 			<h3 class="row section-title">Follow Wendi</h3>
-			<div class="four columns images" style="background-image: url('<?php bloginfo('template_url') ?>/assets/images/bio.jpg');">
+			<div class="wow animated slideInLeft four columns images" style="background-image: url('<?php bloginfo('template_url') ?>/assets/images/bio.jpg');">
 				<div class="links-inner">
 					<p>Twitter</p>
 					<h3>About Wendi</h3>
 				</div>
 			</div>
-			<div class="four columns images" style="background-image: url('<?php bloginfo('template_url') ?>/assets/images/insta.jpg');">
+			<div class="wow animated slideInRight four columns images" style="background-image: url('<?php bloginfo('template_url') ?>/assets/images/insta.jpg');">
 				<div class="links-inner">
 					<p>Follow Wendi</p>
 					<h3>On Twitter</h3>
 				</div>
 			</div>
-			<div class="four columns images" style="background-image: url('<?php bloginfo('template_url') ?>/assets/images/twitter.jpg');">
+			<div class="wow animated slideInLeft four columns images" style="background-image: url('<?php bloginfo('template_url') ?>/assets/images/twitter.jpg');">
 				<div class="links-inner">
 					<p>Follow Wendi</p>
 					<h3>On Instagram</h3>

@@ -6,6 +6,11 @@
 	text-align: center;
 	line-height: 1em;
 	padding: 0.2em 0;
+	z-index: 9999;
+	position: relative;
+	h1 {
+		margin-bottom: 0;
+	}
 	span.light {
 		color: #9e6b98;
 		opacity: 0.3;
