@@ -1,26 +1,11 @@
 <?php /*Template Name: lower-gallery*/ ?>
 
 <?php get_header(); ?>
-<div class="row page-title">
-	<h1>Wendi <span class="light">McLendon-Covey</span><span class="lighter"> Gallery</span></h1>
-</div> 
+	<div class="row twelve columns website-title"><h1><a href="/">Wendi <span class="light">McLendon-Covey</span> <span class="fancy">Fansite</span></a></h1></div>
 
-	<div class="inside galleryContent">
-		<div class="container">
-			<div class="four columns post-sidebar">
-				<div class="page-title">
-					<h1>Wendi <span class="light">McLendon-Covey</span><span class="fancy"> Gallery</span></h1>
-				</div>
-				
-				<div class="sidebar-image">
-					<div class="gallery-box">
-						
-					</div>
-				</div>
-			</div>
-
+	<div class="ttwelve columns inside galleryContent">
 			
-			<div class="eight columns galleryContainer">
+			<div class="twelve columns galleryContainer">
 
              <?php if ( have_posts() ) : 
                 while ( have_posts() ) : 
@@ -30,10 +15,10 @@
                 <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
             <?php endif; ?>
 			</div>
-		</div>
+		
 	</div>
 
-	<div class="row twelve posts-more ">
+	<div class="row twelve columns posts-more">
 		<h3 class="bottom-section-title">Wait, there's more...</h3>
 		<div class="more-inner"><?php
 			$pagelist = get_pages('sort_column=menu_order&sort_order=asc');

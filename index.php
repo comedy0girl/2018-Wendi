@@ -14,9 +14,10 @@
 			<image src="<?php bloginfo('template_url') ?>/assets/images/new-wen.png">	
 		</div>
 		<div class="title hide" >
-			<h1><span class="main">Wendi</span><br/>
+			<image src="<?php bloginfo('template_url') ?>/assets/images/title.png">
+			<!-- <h1><span class="main">Wendi</span><br/>
 			<span class="light">McLendon-Covey</span><br>
-			<span class="fancy">Fansite</span></h1>
+			<span class="fancy">Fansite</span></h1> -->
 		</div>
 	
 	</div>
@@ -32,23 +33,46 @@
 			query_posts( array(
    				'posts_per_page' => 4 )); 
 			if( have_posts() ): while ( have_posts() ) : the_post(); ?>
+				
 				<div class="three columns the-post"><?php 
-				$backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
-					<div class="post-inner-info">
-						<p class="tags"><?php the_time('F') ?> <?php the_time('j') ?> <?php the_time('Y')?> / <span><?php	$categories = get_the_category();
+					$backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
+			  		
+			  				<div class="post-inner-info">
+								<p class="tags">
+									<span><?php the_time('F') ?> <?php the_time('j') ?> <?php the_time('Y')?></span> / <span><?php	$categories = get_the_category();
 									if ( ! empty( $categories ) ) {
 									    echo esc_html( $categories[0]->name );   
 									} 
 								?></span>
-						</p> 
-						<div class="post-pic"style="background-image:url('<?php echo $backgroundImg[0]; ?>');"></div>
-						
-						
-						<h5><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h5>
+								</p><?php
+									if (! $featured = get_the_post_thumbnail()) {
+										$featured = get_the_content();
+									}
+									
+									// extract post thumbnail URI
+									preg_match('/<img.*(src)="([^"]*)"/i', $featured, $matches);
+									$thumb = $matches[2]; 
 
-						<a class="classic-button" href="<?= get_permalink(); ?>">Read More ></a>
-					</div>
-	  			</div><?php 
+									if (!empty($thumb)) : ?>
+								<div class="post-pic"style="background-image:url('<?php echo $thumb; ?>');">
+								</div>
+
+								<?php endif; ?>
+								
+								<h5><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h5>
+
+								<div class="the-excerpt">
+									<a class="classic-button" href="<?= get_permalink(); ?>">Read More ></a>
+								</div>
+			  				</div>
+			  	
+				
+			  		
+				   
+					
+					
+			  	</div><!-- end of post three columns --><?php 
+
 			endwhile; ?>
 
 			<div class="row twelve columns section-more">
@@ -68,19 +92,19 @@
 		</div>
 		<div class="twelve columns the-links">
 			<h3 class="row section-title">Follow Wendi</h3>
-			<div class="wow animated slideInLeft four columns images" style="background-image: url('<?php bloginfo('template_url') ?>/assets/images/bio.jpg');">
+			<div class="four columns images" style="background-image: url('<?php bloginfo('template_url') ?>/assets/images/bio.jpg');">
 				<div class="links-inner">
 					<p>Twitter</p>
 					<h3>About Wendi</h3>
 				</div>
 			</div>
-			<div class="wow animated slideInRight four columns images" style="background-image: url('<?php bloginfo('template_url') ?>/assets/images/insta.jpg');">
+			<div class="four columns images" style="background-image: url('<?php bloginfo('template_url') ?>/assets/images/insta.jpg');">
 				<div class="links-inner">
 					<p>Follow Wendi</p>
 					<h3>On Twitter</h3>
 				</div>
 			</div>
-			<div class="wow animated slideInLeft four columns images" style="background-image: url('<?php bloginfo('template_url') ?>/assets/images/twitter.jpg');">
+			<div class="four columns images" style="background-image: url('<?php bloginfo('template_url') ?>/assets/images/twitter.jpg');">
 				<div class="links-inner">
 					<p>Follow Wendi</p>
 					<h3>On Instagram</h3>

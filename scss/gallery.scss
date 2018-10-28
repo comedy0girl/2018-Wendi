@@ -1,7 +1,6 @@
 /*** Upper Gallery ***/
 
 .main-galleryContainer {
-
 	.gallery-item{
 		float: left;
 		position: relative;
@@ -21,89 +20,68 @@
 	  		text-transform: uppercase;
 		}
 	}
-
-
-	
+	// .post-sidebar {
+	// 	background-color: $body;
+	// 	text-align: center;
+	// 	margin-top: 1em;
+	// 	.page-title {
+	// 		h1 {
+	// 			font-size: 1.5em;
+	// 			text-align: left;
+	// 			padding: 1em;
+	// 		}
+	// 	}
+	// }
 }
-.the-sidebar-gallery {
-	ul {
-		li.page_item_has_children {
-			color: $bright;
-			font-size: 1em;
-			font-family: $header;
-			text-transform: uppercase;
-			a {
-				color: $bright;
-				font-size: 1em;
-				text-transform: uppercase;
-				font-family: $header;
-			}
-			ul.children {
-				display: none;
-			}
-		}
-	}
-}
-
-
-
-
 
 /*** Lower Gallery ***/
 
 .galleryContainer {
-	.gallery-item {
-		margin-bottom: 0;
-	}
-	dt.gallery-icon.landscape,
-	dt.gallery-icon.portrait{
-		float: left;
-		opacity: 0.7;
-		padding: 0.3em;
-		&:hover {
-			opacity: 1;
-		}
-	}
-}
-.post-sidebar {
-	background-color: $body;
-	text-align: center;
-	margin-top: 1em;
-	.page-title {
-		h1 {
-			font-size: 1.5em;
-			text-align: left;
-			padding: 1em;
-		}
-	}
-	.sidebar-image {
-		img {
-			max-width: 70%;
-		}
-		.gallery-box {
-			padding: 2em 0;
-			p{
-				color: $dark;
-				padding: 0;
-			    margin: 0;
-			    text-align: left;
-			    padding-left: 1em;
-				span {
-					color: $bright;
-					font-family: $header;
-				}
+	margin-bottom: 2em;
 
+    .gallery {
+    	
+    	.gallery-item {
+		margin-bottom: 0;
+		.wp-caption-text.gallery-caption {
+			display: none;
 			}
 		}
+		dt.gallery-icon.landscape,
+		dt.gallery-icon.portrait{
+			float: left;
+			opacity: 0.7;
+			padding: 0.3em;
+			&:hover {
+				opacity: 1;
+			}
+		}
+    }
+	
+
+}
+.posts-more {
+	background: $dusty;
+	padding: 1em;
+	h3 {
+		font-family: $header;
+		border-bottom: 1px solid $paper;
+		color: $paper;
+	}
+	p {
+		font-family: $header;
+		a {
+			color: $paper !important;
+		}
 	}
 }
 
-h3.bottom-section-title {
-	z-index: 500;
-	position: relative;
-	width: 100%;
-	margin: 1em auto;
-	font-family: $bold;
-	border-bottom: 1px solid $dark;
-	color: $dark;
-}
+// h3.bottom-section-title {
+// 	z-index: 500;
+// 	position: relative;
+// 	width: 100%;
+// 	margin: 1em auto;
+// 	font-family: $bold;
+// 	border-bottom: 1px solid $dark;
+// 	color: $dark;
+// }

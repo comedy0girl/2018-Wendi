@@ -33,7 +33,7 @@
 				height: 300px;
 				background-repeat: no-repeat;
 				background-size: cover;
-				background-position: center center;
+				background-position: center top;
 				position: relative;
 			}
 		}
@@ -78,6 +78,7 @@
 	min-height: 400px;
 	margin-bottom: 1em;
 	width: 100%;
+
 	.large-behind-text {
 		position: relative;
 		img {
@@ -89,8 +90,7 @@
 	.the-links {
 		position: relative;
 	    margin: 0;
-	    margin-left: 2%;
-	   
+	    margin-left: 1%;	   
 	}	
 }
 

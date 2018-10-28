@@ -1,7 +1,7 @@
 <?php /*Template Name: Blog Home*/ ?>
 
 <?php get_header(); ?>
-<div class="row twelve columns website-title"><h1>Wendi <span class="light">McLendon-Covey</span><span class="lighter"> Gallery</span></h1></div>
+<div class="row twelve columns website-title"><a href="/"><h1>Wendi <span class="light">McLendon-Covey</span><span class="lighter"> Gallery</span></h1></a></div>
 
 <div class="twelve columns news-blog ">
 	<div class="container"><?php 
@@ -15,9 +15,21 @@
 		$wp_query->is_home = false; 
 			while(have_posts()): the_post(); ?>	
 
-			  	<div class="four columns the-post "><?php 
+			  	<div class="four columns the-post "><?php
+					if (! $featured = get_the_post_thumbnail()) {
+						$featured = get_the_content();
+					}
+					
+					// extract post thumbnail URI
+					preg_match('/<img.*(src)="([^"]*)"/i', $featured, $matches);
+					$thumb = $matches[2]; ?>
+
+				<?php if (!empty($thumb)) : ?>
+				
+					
+			  		<?php 
 					$backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
-			  		<div class="post-pic blog"style="background-image:url('<?php echo $backgroundImg[0]; ?>');">
+			  		<div class="post-pic blog"style="background-image:url('<?php echo $thumb; ?>');">
 			  				<div class="postInfo">
 								<div class="postDate">
 									<span><?php the_time('F') ?> <?php the_time('j') ?> <?php the_time('Y')?></span> / <span><?php	$categories = get_the_category();
@@ -28,6 +40,7 @@
 								</div>
 							</div>
 			  		</div>
+			  	<?php endif; ?>
 				
 			  		<h5><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h5>
 				   
@@ -38,24 +51,10 @@
 					
 			  	</div><?php 
 
-
-
-
-
-
 			endwhile; ?>
 	</div>
 </div>
 
 <div class="row twelve columns blog-navigation"><?php wp_pagenavi(); ?></div>
 
-
-
-
-
 <?php get_footer(); ?> 
-
-
-
-
-
