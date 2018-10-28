@@ -23,7 +23,15 @@
 				
 			}
 		}
-		
 	}
+}
 
+///single articles 
+
+.standard-content {
+	padding: 1em;
+	a {
+		color: $title;
+		text-decoration: underline;
+	}
 }

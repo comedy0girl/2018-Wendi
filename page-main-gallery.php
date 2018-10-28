@@ -7,7 +7,7 @@
 </div> 
 
 <div class="galleryContent">
-	<div class="eight columns main-galleryContainer">
+	<div class="nine columns main-galleryContainer">
 
      <?php if ( have_posts() ) : 
         while ( have_posts() ) : 
@@ -19,9 +19,9 @@
 	</div>
 
    
-    <div class="four columns post-sidebar">
+    <div class="three columns gallery-sidebar">
         <div class="page-title">
-            <h1><span class="fancy"> Gallery</span></h1>
+            <h5><span class="fancy"> Gallery</span></h5>
         </div><?php
         if(is_page()) {
             //Assuming current working page is the parent
@@ -44,7 +44,7 @@
             $page_services_children = get_page_children($the_parent_id, $all_wp_pages);
             
             $page_walk_defaults = array();
-            $page_walk_defaults['depth'] = 3;
+            $page_walk_defaults['depth'] = 1;
             $page_walk_defaults['show_date'] = '';
             $page_walk_defaults['date_format'] = get_option('date_format');
             $page_walk_defaults['child_of'] = 0;
@@ -59,7 +59,7 @@
             $output = '';
             $output .= '<ul>';
             
-            $output .= '<li class="top-level">'.get_the_title($the_parent_id).'</li>';
+            // $output .= '<li class="top-level">'.get_the_title($the_parent_id).'</li>';
             
             $output .= walk_page_tree($page_services_children, $page_walk_defaults['depth'], $the_parent_id, $page_walk_defaults);
             $output .= '</ul>';

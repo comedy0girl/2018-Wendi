@@ -1,37 +1,53 @@
 /*** Upper Gallery ***/
-
-.main-galleryContainer {
-	.gallery-item{
-		float: left;
-		position: relative;
-		margin: 0.5em;
-		dt.gallery-icon.landscape {
+.galleryContent {
+	.main-galleryContainer {
+		margin: 0;
+		margin-bottom: 2em;
+		.gallery-item{
 			float: left;
 			position: relative;
-		}
-		.wp-caption-text.gallery-caption {
-		 	position:absolute;
-	   		background-color: $title;
-			font-family: $header;
-	  		width: 100%; 
-	  		bottom: 0;
-	  		margin-left: 0;
-	  		text-align: center;
-	  		text-transform: uppercase;
+			margin: 0.5em;
+			dt.gallery-icon.landscape {
+				float: left;
+				position: relative;
+			}
+			dt.gallery-icon.landscape,
+			dt.gallery-icon.portrait {
+				opacity: 0.8;
+			}
+			.wp-caption-text.gallery-caption {
+			 	position:absolute;
+		   		background-color: $title;
+				font-family: $header;
+		  		width: 100%; 
+		  		bottom: 0;
+		  		margin-left: 0;
+		  		text-align: center;
+		  		text-transform: uppercase;
+			}
+		}	
+	}
+	.gallery-sidebar {
+		background-color: $body;
+		ul {
+			padding: 1em;
+			li.page_item_has_children{
+				padding: 0;
+				margin: 0;
+			}
+			li{
+				font-size: 1.2em;
+    			line-height: 1.9em;
+				a {
+					color: $text;
+					font-family: $para;
+					&:hover {
+						color: $title;
+					}
+				}
+			}
 		}
 	}
-	// .post-sidebar {
-	// 	background-color: $body;
-	// 	text-align: center;
-	// 	margin-top: 1em;
-	// 	.page-title {
-	// 		h1 {
-	// 			font-size: 1.5em;
-	// 			text-align: left;
-	// 			padding: 1em;
-	// 		}
-	// 	}
-	// }
 }
 
 /*** Lower Gallery ***/
