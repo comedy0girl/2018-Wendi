@@ -1,32 +1,48 @@
 .news-container {
 	margin: 1em 0;
 	background-color: $body;
-}
-
-.single-post-text {
-	padding: 0.8em;
-	h1 {
-		color: $dark;
-		font-family: $bold;
-		margin-top: 1em;
-		margin-bottom: 0;
-		img {
-				max-width: 100%;
-			}
-		p {
-			img {
-				max-width: 100%;
-			}
+	.single-post-text {
+		padding: 0.8em;
+		text-align: center;
+		a {
+			color: $title !important;
+			text-decoration: underline;
 		}
+		h1 {
+			color: $dark;
+			font-family: $bold;
+			margin-top: 1em;
+			margin-bottom: 0;
+			img {
+					max-width: 100%;
+				}
+			p {
+				img {
+					max-width: 100%;
+				}
+				
+			}
 
+		}
+		.postDate {
+			color: $title;
+			font-weight: 500;
+			letter-spacing: 0.05em;
+			font-family: $new;
+			margin-bottom: 1em;
+		}
 	}
-	.postDate {
-		color: $title;
-		font-weight: 500;
-		letter-spacing: 0.05em;
-		font-family: $new;
-		margin-bottom: 1em;
+	.share-the-love {
+    	text-align: center;
+    	font-size: 1.5em;
+    	.wpfai-list {
+    		.wpfai-list-item{
+    			a {
+    				color: $title;
+
+    			}
+    		}
+    	}
+    	
 	}
 }
-
-

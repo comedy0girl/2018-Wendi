@@ -35,13 +35,7 @@
 					$backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
 			  		
 	  				<div class="post-inner-info">
-						<p class="tags">
-							<span><?php the_time('F') ?> <?php the_time('j') ?> <?php the_time('Y')?></span> / <span><?php	$categories = get_the_category();
-							if ( ! empty( $categories ) ) {
-							    echo esc_html( $categories[0]->name );   
-							} 
-						?></span>
-						</p><?php
+						<?php
 							if (! $featured = get_the_post_thumbnail()) {
 								$featured = get_the_content();
 							}

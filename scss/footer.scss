@@ -70,6 +70,28 @@
 	
 }
 
+.menu-footer-menu-container {
+	background: $dusty;
+	padding: 0.5em 0;
+	ul#menu-footer-menu {
+		background-color: transparent;
+		li {
+			font-family: $bold;
+			
+			a {
+				color: $paper;
+				line-height: 1.5;
+    		letter-spacing: -.05rem;
+				font-size: 1em;
+				padding: 0 1em;
+				&:hover {
+					color: $text;
+				}
+			}
+		}
+	}
+}
+
 .twelve.columns.copyright {
 	background-color: $bright;
 	font-size: 0.8em;
@@ -79,6 +101,7 @@
 	p{
 		padding: 1em;
 		margin: 0;
+		color: $paper;
 	}
 	a {
 		color: $paper;

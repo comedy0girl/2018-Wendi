@@ -1,8 +1,9 @@
 <?php get_header(); ?>
 <div class="row twelve columns website-title"><h3>Wendi <span class="light">McLendon-Covey</span> <span class="fancy">Fansite</span></h3></div>
+
 	<div class="news-container twelve columns"><?php 
 		if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-			<div class="offset-by-one nine columns single-post-text">
+			<div class="single-post-text">
 			
 				<h1><?php the_title(); ?></h1>
 				<div class="postInfo">
@@ -19,6 +20,11 @@
         endwhile; else : ?>
 			<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p><?php 
         endif; ?>
+
+        <div class="share-the-love">
+            <?php echo wpfai_social(); ?>
+        </div>
+
 	</div>
 
 
