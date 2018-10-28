@@ -1,7 +1,7 @@
         <footer>
     		<div class="twelve columns footer">
     			<div class="twelve columns">
-			    	<span class="footer"><h3>Wendi <span class="light">McLendon-Covey</span> <span class="fancy">Fansite</span></h3></span>
+			    	<span class="footer"><a href="/"><h3>Wendi <span class="light">McLendon-Covey</span> <span class="fancy">Fansite</span></h3></a></span>
 			    </div>
 			    <div class="footer-inner">
 			    	
@@ -23,6 +23,9 @@
 		  	</div>
 	    	
         </footer>
+        <div class="twelve columns footer-menu-wrapper"><?php 
+			wp_nav_menu(['theme_location' => 'footer-menu' ]); ?>
+		</div>
         <div class="twelve columns copyright">
         	<p> Designed and Developed by <a href="">@wendifansite</a>.</p>
         </div>

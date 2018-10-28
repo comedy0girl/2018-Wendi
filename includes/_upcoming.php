@@ -3,8 +3,8 @@
 			<img class="bg-text" src="<?php bloginfo('template_url') ?>/assets/images/goldbergs.png">
 		</div>
 	
-	<div class="wow animated slideInRight offset-by-one nine columns upcoming-inner" data-wow-duration="2s" >
+	<div class="offset-by-one nine columns upcoming-inner">
 		<?php dynamic_sidebar( 'goldbergs_upcoming' ); ?>
-	    <a class="classic-button" href="#">Read More ></a>
+	    <a class="classic-button" href="/goldbergs-upcoming-episodes/">Read More ></a>
 	</div>
 </div>

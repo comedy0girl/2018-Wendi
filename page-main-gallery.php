@@ -3,7 +3,7 @@
 
 <?php get_header(); ?>
 <div class="row page-title">
-	<h1>Wendi <span class="light">McLendon-Covey</span><span class="lighter"> Gallery</span></h1>
+	<h1>Wendi <span class="light">McLendon-Covey</span><span class="lighter"> Fansite</span></h1>
 </div> 
 
 <div class="galleryContent">
@@ -21,7 +21,7 @@
    
     <div class="four columns post-sidebar">
         <div class="page-title">
-            <h1>Wendi <span class="light">McLendon-Covey</span><span class="fancy"> Gallery</span></h1>
+            <h1><span class="fancy"> Gallery</span></h1>
         </div><?php
         if(is_page()) {
             //Assuming current working page is the parent

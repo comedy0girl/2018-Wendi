@@ -22,7 +22,7 @@ get_header(); ?>
 </div>
 
 
-<div class="row twelve posts-more ">
+<div class="row twelve posts-more white">
     <h3 class="section-title">Wait, there's more...</h3>
     <div class="more-inner"><?php
         $pagelist = get_pages('sort_column=menu_order&sort_order=asc');

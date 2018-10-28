@@ -15,13 +15,11 @@
 					</div>
 				</div>
 				<?php the_content(); ?>
-			</div>
-			<?php endwhile; else : ?>
-			<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-			<?php endif; ?>
-
-		
-	</div><!--news container end -->
+			</div><?php 
+        endwhile; else : ?>
+			<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p><?php 
+        endif; ?>
+	</div>
 
 
 	<div class="row twelve posts-more ">

@@ -1,7 +1,4 @@
-<?php
-
-
-get_header(); ?>
+<?php get_header(); ?>
 
 <div class="row page-title">
 	<h1>Wendi <span class="light">McLendon-Covey</span><span class="lighter"> Gallery</span></h1>
