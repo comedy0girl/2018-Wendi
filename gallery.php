@@ -1,7 +1,7 @@
 <?php /*Template Name: lower-gallery*/ ?>
 
 <?php get_header(); ?>
-	<div class="row twelve columns website-title"><h1><a href="/">Wendi <span class="light">McLendon-Covey</span> <span class="fancy">Fansite</span></a></h1></div>
+	<div class="row twelve columns website-title"><h1><a href="/"><h3>Wendi <span class="light">McLendon-Covey</span> <span class="fancy">Fansite</span></h3></a></h1></div>
 
 	<div class="ttwelve columns inside galleryContent">
 			

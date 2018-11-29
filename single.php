@@ -25,10 +25,8 @@
             <?php echo wpfai_social(); ?>
         </div>
 
-	</div>
 
-
-	<div class="row twelve posts-more ">
+        <div class="row twelve posts-more ">
         <h3 class="section-title">Carry On....</h3>
         <div class="more-inner"><?php
             $prevPost = get_previous_post(true);
@@ -73,4 +71,10 @@
             } ?>
         </div>
     </div>
+        
+
+	</div>
+
+
+	
 <?php get_footer(); ?>
