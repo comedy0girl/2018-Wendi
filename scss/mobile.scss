@@ -36,8 +36,15 @@
 			margin-bottom: 1em;
 			margin-left: 0;
 		}
-		
 	}
+
+	.the-links {
+		.inner-links-boxes {
+			width: 100%;
+
+		}
+	}
+		
 	
 }
 
@@ -101,6 +108,16 @@
 		h1 {
 			font-size: 3em;
 			margin-bottom: 0;
+		}
+	}
+
+	.the-links {
+		.inner-links-boxes {
+			width: 100%;
+			.images {
+				box-shadow: none;
+			}
+			
 		}
 	}
 }
