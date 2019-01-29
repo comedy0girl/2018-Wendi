@@ -14,6 +14,11 @@
 			}
 		}
 	}
+	.news-blog {
+		.the-post {
+			padding: 0;
+		}
+	}
 
 	.galleryContent {
 		
@@ -68,7 +73,7 @@
 			width: 100%;
 			padding: 0;
 			margin: 0;
-			padding: 1em;
+			
 			margin-bottom: 1em;
 		}
 	}
@@ -92,7 +97,35 @@
 		}
 		
 	}
+	.website-title {
+		h1 {
+			font-size: 3em;
+			margin-bottom: 0;
+		}
+	}
 }
+
+@media only screen and (max-width: 550px) { 
+	.news {
+		.the-post {
+			height: 420px;
+			.post-inner-info {
+				.post-pic {
+					height: 300px;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 523px) { 
+	.website-title {
+		h1 {
+			font-size: 2em;
+			margin-bottom: 0;
+		}
+	}
+} 
 
 @media only screen and (max-width: 470px) { 
 	.mobile-title {
@@ -107,6 +140,17 @@
 	}
 }
 
+@media only screen and (max-width: 420px) { 
+	.welcomeHero {
+		.wendi {
+			img {
+				max-width: 94%;
+			}
+		}
+	}
+
+}
+
 @media only screen and (max-width: 400px) { 
 	.mobile-title {
 		h1 {
@@ -116,4 +160,18 @@
 	.welcomeHero {
 		height: 345px;
 	}
+}
+
+@media only screen and (max-width: 335px) { 
+	.news-blog  {
+		.the-post {
+
+			a.classic-button {
+				width: 50%;
+				margin-bottom: 1em;
+				bottom: auto;
+			}
+		}
+	}
+
 }

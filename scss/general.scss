@@ -30,6 +30,9 @@ body dl.gallery-item + br { display: none; }
 	a {
 		color: $paper !important;
 	}
+	h1 {
+		margin-bottom: 0;
+	}
 }
 
 .mobile-title {

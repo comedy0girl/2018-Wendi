@@ -27,7 +27,7 @@
 			wp_nav_menu(['theme_location' => 'footer-menu' ]); ?>
 		</div>
         <div class="twelve columns copyright">
-        	<p> Designed and Developed by <a href="">@wendifansite</a>.</p>
+        	<p> Designed and Developed by <a href="https://twitter.com/wendifansite">@wendifansite</a>.</p>
         </div>
         <?php wp_footer(); ?>
     </body>

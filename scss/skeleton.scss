@@ -33,7 +33,7 @@
   width: 100%;
   max-width: 1600px;
   margin: 0 auto;
-  padding: 0 20px;
+  // padding: 0 20px;
   box-sizing: border-box; }
 .column,
 .columns {
@@ -42,11 +42,11 @@
   box-sizing: border-box; }
 
 /* For devices larger than 400px */
-@media (min-width: 400px) {
-  .container {
-    width: 85%;
-    padding: 0; }
-}
+// @media (min-width: 400px) {
+//   .container {
+//     width: 85%;
+//     padding: 0; }
+// }
 
 /* For devices larger than 550px */
 @media (min-width: 550px) {

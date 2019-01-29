@@ -73,8 +73,7 @@
 	
 }
 
-.menu-footer-menu-container {
-	background: $dusty;
+.menu-footer-container {
 	padding: 0.5em 0;
 	ul#menu-footer-menu {
 		background-color: transparent;
@@ -84,7 +83,7 @@
 			a {
 				color: $paper;
 				line-height: 1.5;
-    		letter-spacing: -.05rem;
+    			letter-spacing: -.05rem;
 				font-size: 1em;
 				padding: 0 1em;
 				&:hover {

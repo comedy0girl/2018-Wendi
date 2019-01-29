@@ -64,9 +64,15 @@
 	font-size: 1.3em;
 	background-color: $title;
 	margin-bottom: 1em;
+	.wp-pagenavi a, .wp-pagenavi span {
+		border: 1px solid $dark;
+	}
 	a {
 
 		color: $text;
 		border: 1px solid $text;
+		&:hover {
+			background-color: $paper;
+		}
 	}
 }

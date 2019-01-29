@@ -20,7 +20,7 @@
 	</div>
 	<div class="welcome-bottom">
 		
-		<p>Your Fansite Source For Everything Wendi!fasdfsadasf</p>
+		<p>Your Fansite Source For Everything Wendi!</p>
 	</div>
 
 	<div class="twelve columns news" id="latest-news">
@@ -77,7 +77,8 @@
 	<div class="row twelve columns instagram no-mobile">
 			<h3> <span><i class="fa fa-instagram black"></i>  <a href="">@wendimc_fansite</a></span></h3>
 	  		<div class="row twelve columns" id="instafeed">
-	   		 <!-- LightWidget WIDGET --><script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe id="instagram" src="//lightwidget.com/widgets/7cb700b4ad1253dd8f7c7c9a98c07256.html" id="lightwidget_7cb700b4ad" name="lightwidget_7cb700b4ad"  scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+	  			<!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe id="instagram" src="https://cdn.lightwidget.com/widgets/219a4187096e547db8df110834f085ff.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+	   		
 			</div>
 	</div>
 </div>
