@@ -7,6 +7,8 @@
 			float: left;
 			position: relative;
 			margin: 0.5em;
+			height: 175px;
+			width: 175px;
 			dt.gallery-icon.landscape {
 				float: left;
 				position: relative;
@@ -58,7 +60,9 @@
     .gallery {
     	
     	.gallery-item {
-		margin-bottom: 0;
+			margin-bottom: 0;
+			height: 175px;
+			width: 175px;
 		.wp-caption-text.gallery-caption {
 			display: none;
 			}
