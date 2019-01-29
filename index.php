@@ -51,10 +51,17 @@
 						<?php endif; ?>
 
 						<h5><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h5>
-
-						<div class="the-excerpt">
-							<a class="classic-button" href="<?= get_permalink(); ?>">Read More ></a>
+						<div class="postDate">
+							<span><?php the_time('F') ?> <?php the_time('j') ?> <?php the_time('Y')?></span> / <span><?php	$categories = get_the_category();
+							if ( ! empty( $categories ) ) {
+							    echo esc_html( $categories[0]->name );   
+							} 
+						?></span>
 						</div>
+						
+
+						<a class="classic-button" href="<?= get_permalink(); ?>">Read More ></a>
+						
 	  				</div>
 	
 			  	</div><!-- end of post three columns --><?php 

@@ -105,6 +105,9 @@ img.bg-text {
 	margin-bottom: 1em;
 	font-family: $bold;
 	margin-bottom: 0;
+	line-height: 1em;
+    padding: .2em 0;
+    z-index: 9999;
 	h3 {
 		margin-bottom:0;
 	}

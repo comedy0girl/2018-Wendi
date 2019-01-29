@@ -29,25 +29,23 @@
 		}
 
 		h5 {
-			font-family: $bold;
-		
-			a{
-				color: $dark;
+			margin-bottom: 0px;
+			a {
+				font-family: $header;
+				color: $bright;
 			}
 		}
-		p.tags {
-			color: $text;
+		.postDate {
+			
+			color: $bright;
 			margin: 0;
-			background-color: $body;
-			position: absolute;
-			bottom: 0;
-			font-family: oswaldregular;
-    		padding: .5em;
-    		margin-bottom: 0;
+			margin-bottom: 1em;
+			
+			
 		}
 	}
 	.section-more {
-		margin-top: 3em;
+		margin-top: 1em;
 		a.section-btn {
 			background: $bright;
 			border: 1px solid $bright;
@@ -73,7 +71,7 @@
 
 .image-links {
 	background-color: $title;
-	min-height: 400px;
+	min-height: 425px;
 	margin-bottom: 1em;
 	width: 100%;
 
