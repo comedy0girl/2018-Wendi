@@ -15,14 +15,14 @@
 		$wp_query->is_home = false; 
 			while(have_posts()): the_post(); ?>	
 
-			  	<div class="one-half column the-post "><!-- <?php
+			  	<div class="one-half column the-post "><?php
 					if (! $featured = get_the_post_thumbnail()) {
 						$featured = get_the_content();
 					}
 					
 					// extract post thumbnail URI
 					preg_match('/<img.*(src)="([^"]*)"/i', $featured, $matches);
-					$thumb = $matches[2]; ?> -->
+					$thumb = $matches[2]; ?> 
 
 				<?php if (!empty($thumb)) : ?>
 				
