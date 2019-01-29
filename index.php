@@ -20,7 +20,7 @@
 	</div>
 	<div class="welcome-bottom">
 		
-		<p>Your Fansite Source For Everything Wendi!</p>
+		<p>Your Fansite Source For Everything Wendi!fasdfsadasf</p>
 	</div>
 
 	<div class="twelve columns news" id="latest-news">
