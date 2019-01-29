@@ -5,29 +5,26 @@
 	add_filter( 'use_default_gallery_style', '__return_false' );
 	add_shortcode('gallery', 'gallery_shortcode');
 
-	function setup() {
-		add_theme_support( 'post-thumbnails' );
-		add_image_size( 'homepage-posts', 260, 400, array('center', 'center') ); //(cropped)
-		add_image_size( 'gallery', 175, 175, array('center', 'center') ); //(cropped)
+	add_theme_support('post-thumbnails');
+	if ( function_exists( 'add_image_size' ) ) {
+	add_image_size( 'main-gallery-size', 175, 175, array('center', 'center') ); //(cropped)
+	}
+	add_filter( 'image_size_names_choose', 'my_custom_sizes' );
+	function my_custom_sizes( $sizes ) {
+	return array_merge( $sizes, array(
+	'main-gallery-size' => __( 'Main Gallery Thumb' ),
+	) );
+	}
+	//deactivate WordPress function
+	add_shortcode('gallery', 'gallery_shortcode');
 
-		add_filter( 'image_size_names_choose', 'custom_image_sizes_choose' );
-
-		function custom_image_sizes_choose( $sizes ) {
-		    $custom_sizes = array(
-		        'homepage-posts' => 'Home Page Posts',
-		        'gallery' => 'Gallery'
-		    );
-		    return array_merge( $sizes, $custom_sizes );
-		}
-	}	
-
- 	function register_my_menus() {
-	  register_nav_menus(
+	function register_my_menus() {
+		register_nav_menus(
 		    array(
 		    	'header-menu' => __( 'Header Menu' ),
 		      	'footer-menu' => __( 'Footer Menu' )
 		    )
-	  );
+		);
 	}
 
     // add arrows to menu parent 
