@@ -11,10 +11,12 @@
 			<image src="<?php bloginfo('template_url') ?>/assets/images/new-wen.png">	
 		</div>
 		<div class="title hide" >
-			<image src="<?php bloginfo('template_url') ?>/assets/images/title.png">
-			<!-- <h1><span class="main">Wendi</span><br/>
-			<span class="light">McLendon-Covey</span><br>
-			<span class="fancy">Fansite</span></h1> -->
+			<!-- <image src="<?php bloginfo('template_url') ?>/assets/images/title.png"> -->
+			<div class="title-holder">
+				<h1><span class="main">Wendi</span><br/>
+				<span class="light">McLendon-Covey</span><br>
+				<span class="fancy">Fansite</span></h1>
+			</div>
 		</div>
 	
 	</div>
@@ -69,7 +71,7 @@
 			endwhile; ?>
 
 		<div class="row twelve columns section-more">
-			<a class="section-btn" href="/news/">More News</a>
+			<a class="section-btn" href="/news/">More News ></a>
 		</div>
 	</div><?php 
 	else : ?>

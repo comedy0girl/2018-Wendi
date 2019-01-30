@@ -6,8 +6,6 @@
 	add_shortcode('gallery', 'gallery_shortcode');
 
 	function setup() {
-		add_theme_support( 'post-thumbnails' );
-		add_image_size( 'post-thumbnail', 175, 175, true );
 		add_image_size( 'homepage-posts', 260, 400, true ); //(cropped)
 		add_image_size( 'gallery', 175, 175, true); //(cropped)
 

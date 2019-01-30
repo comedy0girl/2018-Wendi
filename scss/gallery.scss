@@ -1,5 +1,33 @@
 /*** Upper Gallery ***/
 .galleryContent {
+	margin-top: 1em;
+	.project-info {
+		color: $dark;
+    	h4 {
+    		color: $bright;
+    		font-family: $header;
+    		border-bottom: 1px solid $bright;
+    		margin-bottom: 0;
+    	}
+    	ul {
+    		li {
+    			padding-right: 0.5em;
+    			font-size: 1.1em;
+    			font-family: $new; 
+
+    			span{
+    				// text-decoration: underline;
+    				font-family: $para;    			}
+    			a {
+    				color: $dusty;
+    				text-decoration: underline;
+    				&:hover {
+    					color: $bright;
+    				};
+    			}
+    		}
+    	}
+    }
 	.main-galleryContainer {
 		margin: 0;
 		margin-bottom: 2em;
@@ -74,6 +102,8 @@
 			}
 		}
     }
+
+
 }
 .posts-more {
 	background: $dusty;

@@ -3,20 +3,21 @@
 <?php get_header(); ?>
 	<div class="row twelve columns website-title"><a href="/gallery"><h1>Wendi <span class="light">McLendon-Covey</span><span class="lighter"> Gallery</span></h1></a></div>
 
-	<div class="twelve columns inside galleryContent">
-			
-			<div class="twelve columns galleryContainer">
-
-             <?php if ( have_posts() ) : 
+	<div class="twelve columns inside galleryContent"><?php 
+		include (TEMPLATEPATH . '/includes/_project.php'); ?>
+		<div class="twelvecolumns galleryContainer">
+            <?php if ( have_posts() ) : 
                 while ( have_posts() ) : 
                         the_post(); 
                              the_content(); 
                  endwhile; else : ?>
                 <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
             <?php endif; ?>
-			</div>
-		
+		</div>
 	</div>
+
+		
+
 
 	<div class="row twelve columns posts-more">
 		<h3 class="section-title">Wait, there's more...</h3>

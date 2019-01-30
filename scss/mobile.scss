@@ -56,6 +56,8 @@
 	}
 	.mobile-title {
 		display: block;
+		z-index: 600;
+    	position: relative;
 	}
 	.no-mobile {
 		display: none;
