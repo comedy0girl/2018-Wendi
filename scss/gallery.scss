@@ -61,11 +61,7 @@
 
 //.gallery {clear:both;}
 
-dl.gallery-item {
-	float: left;
-	margin: 0px;
-    padding: 0;
-}
+
 
 // #gallery {
 //     margin-bottom: 500px !important;
@@ -78,7 +74,7 @@ dl.gallery-item {
     box-sizing: border-box;
     p{
         text-align: center;
-        color: $thirdColor;
+    
         text-transform: uppercase;
         letter-spacing: .1rem;
         @media screen and (max-width: 450px){
@@ -124,8 +120,10 @@ dl.gallery-item {
     
 // }
 
-dl.gallery-item{
-     margin-bottom: 10px;
+dl.gallery-item {
+	float: left;
+	margin: 0px;
+    padding: 0;
 }
 
 .gallery-item {
@@ -146,7 +144,6 @@ dl.gallery-item{
     color: white !important;
     margin:-46px 1px 10px;
     text-align: center !important;
-    background-color: $thirdColor;
     position: relative;
     z-index: 9999;
     font-size: 0.8em;
@@ -160,17 +157,4 @@ dt.gallery-icon.landscape, dt.gallery-icon.portrait {
     border: 1px solid white;
     opacity: 0.5;
     margin-bottom: 5px;
-}
-
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-#masonryContainer .thePost {
-    background-color: gray;
-    width: 100px;
-    float: left;
-    margin-bottom: 10px;
 }
