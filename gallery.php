@@ -3,7 +3,7 @@
 <?php get_header(); ?>
 	<div class="row twelve columns website-title"><a href="/gallery"><h1>Wendi <span class="light">McLendon-Covey</span><span class="lighter"> Gallery</span></h1></a></div>
 
-	<div class="ttwelve columns inside galleryContent">
+	<div class="twelve columns inside galleryContent">
 			
 			<div class="twelve columns galleryContainer">
 
