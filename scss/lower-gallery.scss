@@ -1,6 +1,6 @@
 /*** Lower Gallery ***/
-.twelve.columns.inside.galleryLower {
-	.project-info {
+
+.project-info {
 		margin-top: 1em;
 		// margin-left: 1em;
 		font-size: 1em;
@@ -34,10 +34,15 @@
 			
 		}
 	}
+
+
+.twelve.columns.inside.galleryLower {
+	
 	.gallery-lower {
-		// margin-bottom: 2em;
-		// max-width: 85%;
-		// margin: 0 auto;
+		
+	// 	margin: 0;
+	// margin-top: 1em;
+	// margin-bottom: 2em;
 		.gallery {
 			display: flex;
    			flex-direction: row;
@@ -46,7 +51,7 @@
    			flex-direction: row;
   			flex-wrap: wrap;
 	    	dl.gallery-item {
-				 // float: left;
+				 float: left;
 			.wp-caption-text.gallery-caption {
 				display: none;
 				}
