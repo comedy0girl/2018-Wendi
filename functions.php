@@ -143,9 +143,4 @@ function wpb_list_child_pages( $atts = array() ) {
 }
 add_shortcode( 'wpb_childpages', 'wpb_list_child_pages' );
 
-
-
-
-	
-
 ?>
