@@ -1,5 +1,5 @@
 
-<div class="row twelve columns project-info"></div><?php
+<div class="three columns project-info"><?php
 	if( get_field('project_title') ): ?>
 		<h4><?php the_field('project_title'); ?></h4><?php 
   	endif; ?>  

@@ -1,62 +1,37 @@
 /*** Upper Gallery ***/
-.galleryContent {
+.galleryContent { 
 	margin-top: 1em;
-	.project-info {
-		color: $dark;
-    	h4 {
-    		color: $bright;
-    		font-family: $header;
-    		border-bottom: 1px solid $bright;
-    		margin-bottom: 0;
-    	}
-    	ul {
-    		li {
-    			padding-right: 0.5em;
-    			font-size: 1.1em;
-    			font-family: $new; 
-
-    			span{
-    				// text-decoration: underline;
-    				font-family: $para;    			}
-    			a {
-    				color: $dusty;
-    				text-decoration: underline;
-    				&:hover {
-    					color: $bright;
-    				};
-    			}
-    		}
-    	}
-    }
-	.main-galleryContainer {
-		margin: 0;
-		margin-bottom: 2em;
-		.gallery-item{
+.main-galleryContainer {
+	margin: 0;
+	margin-top: 1em;
+	margin-bottom: 2em;
+	.gallery-item{
+		float: left;
+		position: relative;
+		margin: 0.5em;
+		dt.gallery-icon.landscape {
 			float: left;
 			position: relative;
-			margin: 0.5em;
-			dt.gallery-icon.landscape {
-				float: left;
-				position: relative;
-			}
-			dt.gallery-icon.landscape,
-			dt.gallery-icon.portrait {
-				opacity: 0.8;
-			}
-			.wp-caption-text.gallery-caption {
-			 	position:absolute;
-		   		background-color: $title;
-				font-family: $header;
-		  		width: 100%; 
-		  		bottom: 0;
-		  		margin-left: 0;
-		  		text-align: center;
-		  		text-transform: uppercase;
-			}
-		}	
-	}
-	.gallery-sidebar {
+		}
+		dt.gallery-icon.landscape,
+		dt.gallery-icon.portrait {
+			opacity: 0.8;
+		}
+		.wp-caption-text.gallery-caption {
+		 	position:absolute;
+	   		background-color: $title;
+			font-family: $header;
+	  		width: 100%; 
+	  		bottom: 0;
+	  		margin-left: 0;
+	  		text-align: center;
+	  		text-transform: uppercase;
+		}
+	}	
+}
+.gallery-sidebar {
 		background-color: $body;
+		margin-top: 1em;
 		ul {
 			padding: 1em;
 			li.page_item_has_children{
@@ -78,33 +53,10 @@
 	}
 }
 
-/*** Lower Gallery ***/
-
-.galleryContainer {
-	margin-bottom: 2em;
-    .gallery {
-    	.gallery-item {
-			margin-bottom: 0;
-			float: left;
-			position: relative;
-			margin: 0.5em;
-		.wp-caption-text.gallery-caption {
-			display: none;
-			}
-		}
-		dt.gallery-icon.landscape,
-		dt.gallery-icon.portrait{
-			float: left;
-			opacity: 0.7;
-			padding: 0.3em;
-			&:hover {
-				opacity: 1;
-			}
-		}
-    }
 
 
-}
+
+
 .posts-more {
 	background: $dusty;
 	
@@ -120,3 +72,4 @@
 		}
 	}
 }
+

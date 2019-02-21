@@ -169,7 +169,13 @@
     	margin: 0 auto 20px;
     	display: table;
 	}
+	.hi-wendi {
+		img.wendi-follow-me {
+			max-width: 100%;
+		}
+	}
 }
+
 
 @media only screen and (max-width: 420px) { 
 	.welcomeHero {
@@ -190,6 +196,9 @@
 	}
 	.welcomeHero {
 		height: 345px;
+		.wendi {
+			height: 400px; 
+		}
 	}
 }
 

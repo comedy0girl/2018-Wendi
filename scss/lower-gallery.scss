@@ -1,0 +1,51 @@
+/*** Lower Gallery ***/
+.twelve.columns.inside.galleryLower {
+	.project-info {
+		margin-top: 1em;
+		margin-left: 1em;
+		font-size: 1.2em;
+		h4 {
+			font-family: $new;
+		}
+		ul {
+			li {
+				font-family: $new;
+				padding-right: 0.5em;
+				letter-spacing: 0.05em;
+				display: block;
+				span {
+					color: $title;
+					font-family: $new;
+					text-decoration: underline;
+				}
+				a {
+					color: $dusty;
+				}
+			}
+			
+		}
+	}
+	.gallery-lower {
+		margin-bottom: 2em;
+		max-width: 90%;
+		margin: 0 auto;
+		.gallery {
+	    	dl.gallery-item {
+				 float: left;
+			.wp-caption-text.gallery-caption {
+				display: none;
+				}
+				dt.gallery-icon.landscape,
+				dt.gallery-icon.portrait{
+					float: left;
+					opacity: 0.7;
+					padding: 0.3em;
+					&:hover {
+						opacity: 1;
+					}
+				}
+			}
+
+		}
+	}
+}

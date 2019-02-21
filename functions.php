@@ -4,6 +4,7 @@
 	add_action( 'init', 'register_my_menus' );
 	add_filter( 'use_default_gallery_style', '__return_false' );
 	add_shortcode('gallery', 'gallery_shortcode');
+	add_theme_support( 'post-thumbnails' );
 
 	function setup() {
 		add_image_size( 'homepage-posts', 260, 400, true ); //(cropped)

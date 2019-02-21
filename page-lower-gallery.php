@@ -3,9 +3,9 @@
 <?php get_header(); ?>
 	<div class="row twelve columns website-title"><a href="/gallery"><h1>Wendi <span class="light">McLendon-Covey</span><span class="lighter"> Gallery</span></h1></a></div>
 
-	<div class="twelve columns inside galleryContent"><?php 
-		include (TEMPLATEPATH . '/includes/_project.php'); ?>
-		<div class="twelvecolumns galleryContainer">
+	<div class="twelve columns inside galleryLower container"><!-- <?php 
+		include (TEMPLATEPATH . '/includes/_project.php'); ?> -->
+		<div class="gallery-lower">
             <?php if ( have_posts() ) : 
                 while ( have_posts() ) : 
                         the_post(); 

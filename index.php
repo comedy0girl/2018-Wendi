@@ -6,18 +6,20 @@
 		<h1>Wendi <span class="light">McLendon-Covey</span><span class="lighter"> Fansite</span></h1>
 	</div>
 
-	<div class="welcomeHero">
-		<div class="wendi">
-			<image src="<?php bloginfo('template_url') ?>/assets/images/new-wen.png">	
-		</div>
-		<div class="title hide" >
-			<!-- <image src="<?php bloginfo('template_url') ?>/assets/images/title.png"> -->
+	<div class="welcomeHero" >
+		<div class="wendi" style="background-image: url('<?php bloginfo('template_url') ?>/assets/images/big-banner.png') ">
+			<!-- <div class="title hide" >
+			
 			<div class="title-holder">
-				<h1><span class="main">Wendi</span><br/>
+				<h1><span class="main">Wendi</span><br>
 				<span class="light">McLendon-Covey</span><br>
 				<span class="fancy">Fansite</span></h1>
 			</div>
-		</div>
+		</div> -->
+			
+		</div> 
+		
+	
 	
 	</div>
 	<div class="welcome-bottom">
