@@ -35,12 +35,18 @@
 		}
 	}
 	.gallery-lower {
-		margin-bottom: 2em;
-		max-width: 90%;
-		margin: 0 auto;
+		// margin-bottom: 2em;
+		// max-width: 85%;
+		// margin: 0 auto;
 		.gallery {
+			display: flex;
+   			flex-direction: row;
+   			align-items: center;
+   			justify-content: center;
+   			flex-direction: row;
+  			flex-wrap: wrap;
 	    	dl.gallery-item {
-				 float: left;
+				 // float: left;
 			.wp-caption-text.gallery-caption {
 				display: none;
 				}

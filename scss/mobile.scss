@@ -82,10 +82,21 @@
 			width: 100%;
 			padding: 0;
 			margin: 0;
-			
-			margin-bottom: 1em;
+			height: 400px;
+			margin-bottom: 3em;
 		}
 	}
+}
+
+@media only screen and (max-width: 670px) { 
+	.menu-footer-menu-container {
+		ul#menu-footer-menu {
+			li {
+				display: block;
+			}
+		}
+	}
+
 }
 
 @media only screen and (max-width: 600px) { 
