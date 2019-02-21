@@ -32,25 +32,34 @@
 			}
 			dt.gallery-icon.landscape,
 			dt.gallery-icon.portrait {
-				opacity: 0.6;
+				// opacity: 0.6;
 				background-color: $text;
 				height: 175px;
+				&:hover {
+	  				background-color: $bright	
+	  			}
 
 				img {
 					opacity: 0.5;
+					outline: 1px solid $paper;
+	  				outline-offset: -4px;
+	  				&:hover {
+	  					opacity: 0.1;
+	  				}
+
 				}
 			}
 			.wp-caption-text.gallery-caption {
 			 	position: absolute;
 			    font-family: $bold;
-			    width: 90%;
-			  	height: 90%;
+			    // width: 90%;
+			  	// height: 90%;
 			    margin-left: 0;
 			    text-align: center;
 			    text-transform: uppercase;
 			    color: $body;
 			    font-size: 1.2em;
-			    border: 1px solid;
+			   
 			    padding: 0.2em;
 			    display: -webkit-box;
 			    display: -ms-flexbox;
@@ -61,11 +70,12 @@
 			    -webkit-box-pack: center;
 			    -ms-flex-pack: center;
 			    justify-content: center;
-			    &:hover {
-					background: $title;
-					opacity: 0.5;
-					color: $dark;
-				}
+			    z-index: 50;
+			 //    &:hover {
+				// 	background: $title;
+				// 	opacity: 0.5;
+				// 	color: $dark;
+				// }
 			}
 		}
 	}	
