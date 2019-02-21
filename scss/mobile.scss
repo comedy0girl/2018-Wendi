@@ -47,6 +47,24 @@
 		
 	
 }
+@media only screen and (max-width: 800px) { 
+	.image-links {
+		.hi-wendi {
+			width: 100%;
+		}
+		.the-links {
+			width: 100%;
+			.inner-links-boxes {
+				width: 90%;
+				.images {
+					width: 47%;
+				}
+			}
+		}
+	}
+
+}
+
 
 
 @media only screen and (max-width: 750px) { 
@@ -105,18 +123,8 @@
 			font-size: 4rem;
 		}
 	}
-	.image-links {
-		margin: 0;
-		.the-links {
-			margin: 0;
-			.images {
-				width: 100%;
-				margin: 0;
-				margin-bottom: 1em;
-			}
-		}
-		
-	}
+	
+	
 	.website-title {
 		h1 {
 			font-size: 3em;
@@ -124,15 +132,20 @@
 		}
 	}
 
-	.the-links {
-		.inner-links-boxes {
-			width: 100%;
-			.images {
-				box-shadow: none;
-			}
+	.image-links {
+		
+		.the-links {
 			
+			.inner-links-boxes {
+				
+				.images {
+					width: 100%;
+				}
+			}
 		}
 	}
+
+	
 
 	.news-container {
 		.share-the-love {
@@ -141,6 +154,7 @@
 	}
 	
 }
+
 
 @media only screen and (max-width: 550px) { 
 	.news {

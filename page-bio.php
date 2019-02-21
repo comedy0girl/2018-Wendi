@@ -3,7 +3,7 @@
 
 <?php get_header(); ?>
 	<div class="row page-title">
-		<h1>Wendi <span class="light">McLendon-Covey</span><span class="lighter"></span></h1>
+		<div class="row twelve columns website-title"><a href="/"><h1>Wendi <span class="light">McLendon-Covey</span><span class="lighter"> Fansite</span></h1></a></div>
 	</div>
 
 	<div class="biography">

@@ -5,7 +5,7 @@
 <div class="row twelve columns website-title"><a href="/"><h1>Wendi <span class="light">McLendon-Covey</span><span class="lighter"> Fansite</span></h1></a></div>
 
 <div class="galleryContent">
-	<div class="ten columns main-galleryContainer">
+	<div class="nine columns main-galleryContainer">
 
      <?php if ( have_posts() ) : 
         while ( have_posts() ) : 
@@ -17,7 +17,7 @@
 	</div>
 
    
-    <div class="two columns gallery-sidebar">
+    <div class="three columns gallery-sidebar">
         <div class="page-title">
             <h5><span class="fancy"> Gallery</span></h5>
         </div><?php
