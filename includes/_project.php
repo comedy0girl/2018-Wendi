@@ -1,5 +1,5 @@
 
-<div class="three columns project-info"><?php
+<div class="row twelve columns project-info"><?php
 	if( get_field('project_title') ): ?>
 		<h4><?php the_field('project_title'); ?></h4><?php 
   	endif; ?>  
@@ -20,5 +20,6 @@
   			<li><span>Official Site:</span> <a href="<?php the_field('official_site'); ?>"><?php the_field('official_site'); ?></a></li><?php
   		endif; ?>
   	</ul>
-  
 </div>
+
+

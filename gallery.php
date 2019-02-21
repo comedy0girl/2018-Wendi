@@ -3,8 +3,8 @@
 <?php get_header(); ?>
 	<div class="row twelve columns website-title"><a href="/gallery"><h1>Wendi <span class="light">McLendon-Covey</span><span class="lighter"> Gallery</span></h1></a></div>
 
-	<div class="twelve columns inside galleryLower container"><!-- <?php 
-		include (TEMPLATEPATH . '/includes/_project.php'); ?> -->
+	<div class="twelve columns inside galleryLower container"><?php 
+		include (TEMPLATEPATH . '/includes/_project.php'); ?>
 		<div class="gallery-lower">
             <?php if ( have_posts() ) : 
                 while ( have_posts() ) : 
@@ -14,14 +14,23 @@
                 <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
             <?php endif; ?>
 		</div>
+		<div class="row twelve columns related-pages"><?php 
+          $otherpages = do_shortcode('[wpb_childpages]');
+              if($otherpages !== '') { 
+
+             
+                echo do_shortcode(" [wpb_childpages]");
+          } ?>
+    
+      </div>
 	</div>
 
 		
 
 
-	<div class="row twelve columns posts-more">
-		<h3 class="section-title">Wait, there's more...</h3>
-		<div class="more-inner"><?php
+	<div class="row twelve columns gallery-more">
+	
+		<div class="more-gallery-inner"><?php
 			$pagelist = get_pages('sort_column=menu_order&sort_order=asc');
 			$pages = array();
 			foreach ($pagelist as $page) {
