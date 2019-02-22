@@ -2,10 +2,8 @@
 
 .project-info {
 		margin-top: 1em;
-		// margin-left: 1em;
 		font-size: 1em;
 		background-color: $body;
-	
 		height: auto;
 		h4 {
 			font-family: $new;
@@ -17,13 +15,13 @@
 		ul {
 			padding: 1em;
 			margin-bottom: 0;
+			text-align: center;
 			li {
 				font-family: $new;
-				padding-right: 0.5em;
+				padding-right: 1em;
 				letter-spacing: 0.05em;
 				
 				span {
-					// color: $title;
 					font-family: $new;
 					text-decoration: underline;
 				}
@@ -37,12 +35,7 @@
 
 
 .twelve.columns.inside.galleryLower {
-	
 	.gallery-lower {
-		
-	// 	margin: 0;
-	// margin-top: 1em;
-	// margin-bottom: 2em;
 		.gallery {
 			display: flex;
    			flex-direction: row;
