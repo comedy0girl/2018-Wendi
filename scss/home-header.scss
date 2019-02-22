@@ -56,48 +56,40 @@
 
 
 	.title.hide {
-		height: 600px;
-
-
-
-
-    	display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-	
+		position: absolute;
+		bottom: 0;
 		text-align: center;
-		h1 {
-			text-align: left;
-			margin-bottom: 0;
-			line-height: 0.8em;
-			opacity: 0.5;
-			
-			float: right;
+		img.title-me {
+			max-width: 95%;
+
 		}
-		span.main {
-			color: #b993b3;
-			font-family: $bold;
-			font-size: 6em;		
-		}
-		span.light {
-			color: #9e6b98;
-			opacity: 0.3;
-			font-family: $bold;
-			font-size: 2em;
-		}
-		span.fancy {
-			color: $paper;
-			font-family: $links;
-		    font-size: 3em;
-		    text-align: right;
-		    float: right;
-		}
+		// h1 {
+		// 	text-align: left;
+		// 	margin-bottom: 0;
+		// 	line-height: 0.8em;
+		// 	// opacity: 0.7;
+		// 	float: right;
+		// }
+		// span.main {
+		// 	color: #b993b3;
+		// 	font-family: $bold;
+		// 	font-size: 5em;		
+		// 	float: left;
+		// }
+		// span.light {
+		// 	color: #9e6b98;
+		// 	opacity: 0.3;
+		// 	font-family: $bold;
+		// 	font-size: 2em;
+		// 	float: left;
+		// }
+		// span.fancy {
+		// 	color: $paper;
+		// 	font-family: $links;
+		//     font-size: 3em;
+		//     text-align: right;
+		//     float: right;
+		// }
 	}
 }
 

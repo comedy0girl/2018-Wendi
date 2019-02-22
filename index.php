@@ -7,15 +7,16 @@
 	</div>
 
 	<div class="welcomeHero" >
-		<div class="wendi" style="background-image: url('<?php bloginfo('template_url') ?>/assets/images/big-banner.png') ">
-			<!-- <div class="title hide" >
+		<div class="wendi" style="background-image: url('<?php bloginfo('template_url') ?>/assets/images/other-banner.png') ">
+			 <div class="title hide" >
 			
 			<div class="title-holder">
-				<h1><span class="main">Wendi</span><br>
+				<img class="title-me" alt="Wendi McLendon-Covey Fansite" src="<?php bloginfo('template_url') ?>/assets/images/site-title.png">
+				<!-- <h1><span class="main">Wendi</span><br>
 				<span class="light">McLendon-Covey</span><br>
-				<span class="fancy">Fansite</span></h1>
+				<span class="fancy">Fansite</span></h1> -->
 			</div>
-		</div> -->
+		</div>
 			
 		</div> 
 		

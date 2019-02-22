@@ -15,24 +15,36 @@
 }
 
 .fast-facts {
-	text-align: center;
 	background-color: $title;
 	margin-bottom: 1em;
+	width: 100%;
+
+		.large-behind-text {
+		position: relative;
+		img {
+			max-width: 100%;
+			position: absolute;
+			top: 0;
+		}
+	}
 	h3 {
 		text-align: left;
 		border-bottom: 1px solid $dark;
 		
 	}
-	ul {
-		li{
-			display: block;
-			font-family: $new;
-			font-size: 1em;
-			a {
-				color: $dark;
-				font-family: $header;
-				&:hover {
-					color: $dusty;
+	.facts-inner {
+		text-align: center;
+		ul {
+			li{
+				display: block;
+				font-family: $new;
+				font-size: 1em;
+				a {
+					color: $dark;
+					font-family: $header;
+					&:hover {
+						color: $dusty;
+					}
 				}
 			}
 		}

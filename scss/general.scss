@@ -55,6 +55,16 @@ body dl.gallery-item + br { display: none; }
 	}
 }
 
+.classic-button-white.back-to-top{
+	margin: 0 1em;
+	background-color: $title;
+	padding: 1em;
+	&:hover {
+		background: $dark;
+	}
+}
+
+
 
 .large-behind-text {
 	font-size: 16em !important;
