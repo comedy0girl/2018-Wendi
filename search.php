@@ -6,7 +6,7 @@ Template Name: Search Page
 get_header(); ?>
 
 <div class="row page-title">
-	<h1>Wendi <span class="light">McLendon-Covey</span><span class="lighter"> Gallery</span></h1>
+	<a href="/"><h3>Wendi <span class="light">McLendon-Covey</span> <span class="fancy">Fansite</span></h3></a>
 </div> 
 
 

@@ -1,5 +1,7 @@
 <?php get_header(); ?>
-<div class="row twelve columns website-title"><h3>Wendi <span class="light">McLendon-Covey</span> <span class="fancy">Fansite</span></h3></div>
+    <div class="row twelve columns website-title">
+        <a href="/"><h3>Wendi <span class="light">McLendon-Covey</span> <span class="fancy">Fansite</span></h3></a>
+    </div>
 
 	<div class="news-container twelve columns">
         <div class="twelve columns news-inner"><?php 

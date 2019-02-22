@@ -3,28 +3,19 @@
 
 <div class="twelve columns">
 	<div class="mobile-title">
-		<h1>Wendi <span class="light">McLendon-Covey</span><span class="lighter"> Fansite</span></h1>
+		<a href="/"><h3>Wendi <span class="light">McLendon-Covey</span> <span class="fancy">Fansite</span></h3></a>
 	</div>
 
 	<div class="welcomeHero" >
 		<div class="wendi" style="background-image: url('<?php bloginfo('template_url') ?>/assets/images/other-banner.png') ">
 			 <div class="title hide" >
-			
-			<div class="title-holder">
-				<img class="title-me" alt="Wendi McLendon-Covey Fansite" src="<?php bloginfo('template_url') ?>/assets/images/site-title.png">
-				<!-- <h1><span class="main">Wendi</span><br>
-				<span class="light">McLendon-Covey</span><br>
-				<span class="fancy">Fansite</span></h1> -->
+				<div class="title-holder">
+					<img class="title-me" alt="Wendi McLendon-Covey Fansite" src="<?php bloginfo('template_url') ?>/assets/images/site-title.png">
+				</div>
 			</div>
-		</div>
-			
 		</div> 
-		
-	
-	
 	</div>
 	<div class="welcome-bottom">
-		
 		<p>Your Fansite Source For Everything Wendi!</p>
 	</div>
 

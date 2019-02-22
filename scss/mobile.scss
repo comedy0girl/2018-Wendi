@@ -76,6 +76,9 @@
 		display: block;
 		z-index: 600;
     	position: relative;
+    	a {
+    		color: $paper;
+    	}
 	}
 	.no-mobile {
 		display: none;
