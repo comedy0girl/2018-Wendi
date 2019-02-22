@@ -237,6 +237,34 @@
 			height: 400px; 
 		}
 	}
+
+	.galleryLower {
+		.gallery-lower {
+			.gallery {
+				dl.gallery-item {
+					height: 125px !important;
+    				width: 125px !important;
+    				dt.gallery-icon.landscape,
+					dt.gallery-icon.portrait {
+						height: 125px;
+    					width: 125px;
+    					img {
+    						height: 125px;
+    						width: 125px;
+    					}
+					}
+				}
+
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 369px) { 
+	.welcome-bottom {
+		font-size: 1.1em;
+	}
+
 }
 
 @media only screen and (max-width: 335px) { 

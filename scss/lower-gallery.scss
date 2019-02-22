@@ -44,7 +44,11 @@
    			flex-direction: row;
   			flex-wrap: wrap;
 	    	dl.gallery-item {
-				 float: left;
+				float: left;
+				margin: 0;
+				height: 175px;
+				width: 175px;
+				padding: 0.1em;
 			.wp-caption-text.gallery-caption {
 				display: none;
 				}

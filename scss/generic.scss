@@ -32,8 +32,15 @@
 				color: $dark;
 			}
 			.gallery {
+				display: flex;
+	   			flex-direction: row;
+	   			align-items: center;
+	   			justify-content: center;
+	   			flex-direction: row;
+	  			flex-wrap: wrap;
 				dl.gallery-item {
 					float: left;
+					margin: 0;
 					.wp-caption-text.gallery-caption {
 						display: none;
 					}

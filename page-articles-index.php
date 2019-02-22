@@ -2,7 +2,7 @@
 
 
 <?php get_header(); ?>
-<div class="row page-title">
+<div class="website-title">
     <a href="/"><h3>Wendi <span class="light">McLendon-Covey</span> <span class="fancy">Fansite</span></h3></a>
 </div>
 
