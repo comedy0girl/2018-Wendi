@@ -59,6 +59,8 @@ body dl.gallery-item + br { display: none; }
 	margin: 0 1em;
 	background-color: $title;
 	padding: 1em;
+	float: right;
+	margin-bottom: 0.5em;
 	&:hover {
 		background: $dark;
 	}

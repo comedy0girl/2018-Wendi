@@ -1,42 +1,7 @@
-// .menu {
-// 	width: 100%;
-// 	background: $dark;
-// 	z-index: 9999;
-// 	margin: 0;
-// 	padding: 0.5em 0;
-// 	text-align: center;
-// 	position: relative;
-// 	.menu-bar {
-// 		.row.twelve.columns.menu-wrapper{
-// 			.menu-header-menu-container {
-// 				ul#menu-header-menu {
-// 					li.menu-item {
-// 						display: inline;
-// 						list-style-type: none;
-// 						margin-top: 1em;
-						
-// 						a {
-							
-// 							font-size:3em;
-// 							font-family: $links;
-// 							padding: 1em 0.5em;
-// 							color: $paper;
-// 							&:hover {
-// 								color: $dark;
-// 							}
-// 						}
-// 					}
-// 				}
-// 			}
-// 		}
-// 	}
-// }
-
-
 .menu {
 	width: 100%;
 	background: $dark;
-	z-index: 9999;
+	z-index: 500;
 	margin: 0;
 	padding: 0.5em 0;
 	text-align: center;
