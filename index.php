@@ -87,7 +87,7 @@
 
 
 	<div class="row twelve columns instagram no-mobile">
-			<h3> <span><i class="fa fa-instagram black"></i>  <a href="">@wendimc_fansite</a></span></h3>
+			<h3> <span><i class="fa fa-instagram black"></i>  <a href="https://www.instagram.com/wendimc_fansite/">@wendimc_fansite</a></span></h3>
 	  		<div class="row twelve columns" id="instafeed">
 	  			<!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe id="instagram" src="https://cdn.lightwidget.com/widgets/219a4187096e547db8df110834f085ff.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
 	   		

@@ -14,10 +14,51 @@ p {
 	font-family: $para;
 }
 
-// img {
-// 	max-width: 100%;
-// 	height: auto;
-// }
+img.size-full,
+img.size-medium,
+img.size-large,
+img.size-homepage-posts
+// img.size-thumbnail,
+// img.size-gallery
+{
+	max-width: 100%;
+	height: auto;
+}
+
+img.alignright { 
+	float: right; 
+	margin: 0 0 1em 1em; 
+	max-width: 100%;
+	height: auto;
+}
+img.alignleft { 
+	float: left; 
+	margin: 0 1em 1em 0; 
+	max-width: 100%;
+	height: auto;
+}
+img.aligncenter { 
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto; 
+}
+.alignright { 
+	float: right; 
+	max-width: 100%;
+	height: auto;
+}
+.alignleft { 
+	float: left;
+	max-width: 100%;
+	height: auto; 
+}
+.aligncenter { 
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto; 
+	max-width: 100%;
+	height: auto;
+}
 
 li {
 	list-style: none;
@@ -47,7 +88,7 @@ body dl.gallery-item + br { display: none; }
 
 .classic-button {
 	background-color: $dark;
-	padding: 1em;
+	padding: 1em 2em;
 	color: $paper;
 	&:hover {
 		background: $title;

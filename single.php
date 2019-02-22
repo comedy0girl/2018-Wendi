@@ -1,26 +1,27 @@
 <?php get_header(); ?>
 <div class="row twelve columns website-title"><h3>Wendi <span class="light">McLendon-Covey</span> <span class="fancy">Fansite</span></h3></div>
 
-	<div class="news-container twelve columns"><?php 
-		if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-			<div class="single-post-text">
-			
-				<h1><?php the_title(); ?></h1>
-				<div class="postInfo">
-					<div class="postDate">
-						<span><?php the_time('F') ?> <?php the_time('j') ?> <?php the_time('Y')?></span> / <span><?php	$categories = get_the_category();
-						if ( ! empty( $categories ) ) {
-						    echo esc_html( $categories[0]->name );   
-						} 
-					?></span>
-					</div>
-				</div>
-				<?php the_content(); ?>
-			</div><?php 
-        endwhile; else : ?>
-			<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p><?php 
-        endif; ?>
-
+	<div class="news-container twelve columns">
+        <div class="twelve columns news-inner"><?php 
+    		if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+    			<div class="single-post-text">
+    			
+    				<h1><?php the_title(); ?></h1>
+    				<div class="postInfo">
+    					<div class="postDate">
+    						<span><?php the_time('F') ?> <?php the_time('j') ?> <?php the_time('Y')?></span> / <span><?php	$categories = get_the_category();
+    						if ( ! empty( $categories ) ) {
+    						    echo esc_html( $categories[0]->name );   
+    						} 
+    					?></span>
+    					</div>
+    				</div>
+    				<?php the_content(); ?>
+    			</div><?php 
+            endwhile; else : ?>
+    			<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p><?php 
+            endif; ?>
+        </div>
         <div class="share-the-love">
             <?php echo wpfai_social(); ?>
         </div>

@@ -31,7 +31,18 @@
 			font-family: $new;
 			margin-bottom: 1em;
 		}
+		.wp-caption.alignnone,
+		.wp-caption.alignleft {
+			max-width: 100%;
+			height: auto;
+			img.size-full {
+				max-width: 100%;
+				height: auto;
+			}
+		}
+		
 	}
+
 	.share-the-love {
     	text-align: center;
     	font-size: 1.5em;
