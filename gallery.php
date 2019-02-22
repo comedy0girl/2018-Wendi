@@ -1,7 +1,7 @@
 <?php /*Template Name: lower-gallery*/ ?>
 
 <?php get_header(); ?>
-	<div class="row twelve columns website-title"><a href="/gallery"><h1>Wendi <span class="light">McLendon-Covey</span><span class="lighter"> Gallery</span></h1></a></div>
+	<div class="row twelve columns website-title"><a href="/gallery"><h1>Wendi <span class="light">McLendon-Covey</span><span class="fancy"> Gallery</span></h1></a></div>
 
 <?php 
 		include (TEMPLATEPATH . '/includes/_project.php'); ?> 

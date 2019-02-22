@@ -2,7 +2,7 @@
 
 
 <?php get_header(); ?>
-<div class="row twelve columns website-title"><a href="/"><h1>Wendi <span class="light">McLendon-Covey</span><span class="lighter"> Fansite</span></h1></a></div>
+<div class="row twelve columns website-title"><a href="/"><h1>Wendi <span class="light">McLendon-Covey</span><span class="fancy"> Fansite</span></h1></a></div>
 
 <div class="galleryContent">
 	<div class="nine columns main-galleryContainer">

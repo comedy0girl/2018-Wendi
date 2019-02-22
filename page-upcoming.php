@@ -3,9 +3,7 @@
     /* Template Name: Upcoming Episodes */
  
 get_header(); ?>
-<div class="row page-title">
-    <h2>Wendi <span class="light">McLendon-Covey</span><span class="fancy"> Fansite</span></h2>
-</div> 
+<div class="row twelve columns website-title"><a href="/"><h1>Wendi <span class="light">McLendon-Covey</span><span class="fancy"> Fansite</span></h1></a></div>
 
 <div class="twelve columns standard-content">
 

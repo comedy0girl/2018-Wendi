@@ -31,6 +31,27 @@
 				border-bottom: 1px solid $dark;
 				color: $dark;
 			}
+			.gallery {
+				dl.gallery-item {
+					float: left;
+					.wp-caption-text.gallery-caption {
+						display: none;
+					}
+					dt.gallery-icon.landscape,
+					dt.gallery-icon.portrait{
+						float: left;
+						opacity: 0.7;
+						padding: 0.3em;
+						&:hover {
+							opacity: 1;
+						}
+						img {
+						outline: 1px solid $paper;
+		  				outline-offset: -4px;
+						}
+					}
+				}
+			}
 		}
 	}
 }
