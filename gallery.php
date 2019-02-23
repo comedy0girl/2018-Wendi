@@ -5,7 +5,7 @@
 		<a href="/"><h3>Wendi <span class="light">McLendon-Covey</span> <span class="fancy">Fansite</span></h3></a>
 	</div><?php 
 		include (TEMPLATEPATH . '/includes/_project.php'); ?> 
-	<div class="twelve columns inside galleryLower container">
+	<div class="twelve columns inside galleryLower">
 		<div class="gallery-lower">
             <?php if ( have_posts() ) : 
                 while ( have_posts() ) : 
