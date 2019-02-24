@@ -31,47 +31,21 @@
 
         <div class="row twelve posts-more ">
         <h3 class="section-title">Carry On....</h3>
-        <div class="more-inner"><?php
-            $prevPost = get_previous_post(true);
-            $nextPost = get_next_post(true); ?>
+        <div class="more-inner">
 
-            <div class="one-half column left"><?php 
-            $prevPost = get_previous_post(true);
-            if($prevPost) {
-                $args = array(
-                    'posts_per_page' => 1,
-                    'include' => $prevPost->ID
-                );
-                $prevPost = get_posts($args);
-                foreach ($prevPost as $post) {
-                    setup_postdata($post); ?>
+            <div class="one-half column left">
                 <div class="post-previous">
                    
-                    <p>Previous: <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
+                    <p><?php previous_post_link(); ?> </a></p>
                 </div>
 
-            </div><?php
-                wp_reset_postdata();
-                } //end foreach
-            } // end if
-         
-            if($nextPost) {
-                $args = array(
-                    'posts_per_page' => 1,
-                    'include' => $nextPost->ID
-                );
-            $nextPost = get_posts($args);
-            foreach ($nextPost as $post) {
-                setup_postdata($post); ?>
+            </div>
             <div class="one-half column right">
                 <div class="post-next">
                     
-                    <p>Next:<a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></p>
+                    <p><?php next_post_link(); ?></a></p>
                 </div>
-            </div><?php
-                wp_reset_postdata();
-            } 
-            } ?>
+            </div
         </div>
     </div>
         
