@@ -8,7 +8,7 @@
 	padding: 0.2em 0;
 	z-index: 9999;
 
-	h3 {
+	h1 {
 		margin-bottom: 0;
 		font-family: $bold;
 	}
@@ -34,7 +34,7 @@
 	background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    z-index: 0;
+    z-index: 5;
     opacity: 0.8;
     margin: 0 auto;
     display: -webkit-box;
@@ -51,6 +51,9 @@
 		width: 100%;
     	background-size: cover;
     	background-position: center center;
+    	h1 {
+				display: none;
+			}
 
 	}
 
@@ -61,6 +64,9 @@
 		text-align: center;
 		img.title-me {
 			max-width: 95%;
+		}
+		.title-holder {
+
 		}
 	}
 }

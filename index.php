@@ -3,13 +3,15 @@
 
 <div class="twelve columns">
 	<div class="mobile-title">
-		<a href="/"><h3>Wendi <span class="light">McLendon-Covey</span> <span class="fancy">Fansite</span></h3></a>
+		<a href="/"><h1>Wendi <span class="light">McLendon-Covey</span> <span class="fancy">Fansite</span></h1></a>
 	</div>
 
 	<div class="welcomeHero" >
 		<div class="wendi" style="background-image: url('<?php bloginfo('template_url') ?>/assets/images/other-banner.png') ">
+			<h1>Wendi McLendon-Covey Fansite</h1>
 			 <div class="title hide" >
 				<div class="title-holder">
+					
 					<img class="title-me" alt="Wendi McLendon-Covey Fansite" src="<?php bloginfo('template_url') ?>/assets/images/site-title.png">
 				</div>
 			</div>
