@@ -8,7 +8,7 @@
 
 	<div class="welcomeHero" >
 		<div class="wendi" style="background-image: url('<?php bloginfo('template_url') ?>/assets/images/other-banner.png') ">
-			<h1>Wendi McLendon-Covey Fansite</h1>
+			
 			 <div class="title hide" >
 				<div class="title-holder">
 					
@@ -22,7 +22,7 @@
 	</div>
 
 	<div class="twelve columns news" id="latest-news">
-		<div class="large-behind-text"><img src="<?php bloginfo('template_url') ?>/assets/images/news.png"></div>
+		<div class="large-behind-text"><img  alt="Wendi McLendon-Covey News" src="<?php bloginfo('template_url') ?>/assets/images/news.png"></div>
 
 			<h3 class="section-title">The Latest</h3><?php 
 			query_posts( array(

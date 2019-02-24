@@ -7,5 +7,6 @@
 </header>
 
 <head>
+	<h1 class="hide">Wendi McLendon-Covey Fansite</h1>
 	
 </head>

@@ -2,7 +2,7 @@
 	<div class="nine columns the-links">
 
 			<div  class="large-behind-text">
-				<img class="bg-text" src="<?php bloginfo('template_url') ?>/assets/images/queen.png">
+				<img class="bg-text"  alt="Follow Wendi" src="<?php bloginfo('template_url') ?>/assets/images/queen.png">
 			</div>
 			<h3 class="row section-title">Follow Wendi</h3>
 			<div class="inner-links-boxes">
@@ -26,7 +26,7 @@
 			
 	</div>
 	<div class="three columns hi-wendi">
-		<img class="wendi-follow-me" src="<?php bloginfo('template_url') ?>/assets/images/hi-wendi.png">
+		<img class="wendi-follow-me"  alt="Queen Wendi | Wendi McLendon-Covey Fansite" src="<?php bloginfo('template_url') ?>/assets/images/hi-wendi.png">
 	</div>
 
 </div>
