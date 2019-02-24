@@ -208,6 +208,8 @@
 	.upcoming-inner {
 		padding: 4em 2em;
 		color: $paper;
+		z-index: 999;
+    	position: relative;
 		h3.section-title {
 			width: 100%;
 		}
