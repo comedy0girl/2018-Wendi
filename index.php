@@ -12,7 +12,7 @@
 			 <div class="title hide" >
 				<div class="title-holder">
 					
-					<img class="title-me" alt="Wendi McLendon-Covey Fansite" src="<?php bloginfo('template_url') ?>/assets/images/site-title.png">
+					<img class="title-me" alt="Wendi McLendon-Covey Fansite" title="Welcome to Wendi McLendon-Covey Fansite" src="<?php bloginfo('template_url') ?>/assets/images/site-title.png">
 				</div>
 			</div>
 		</div> 
@@ -22,7 +22,7 @@
 	</div>
 
 	<div class="twelve columns news" id="latest-news">
-		<div class="large-behind-text"><img  alt="Wendi McLendon-Covey News" src="<?php bloginfo('template_url') ?>/assets/images/news.png"></div>
+		<div class="large-behind-text"><img alt="Wendi McLendon-Covey News" src="<?php bloginfo('template_url') ?>/assets/images/news.png"></div>
 
 			<h3 class="section-title">The Latest</h3><?php 
 			query_posts( array(
