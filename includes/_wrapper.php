@@ -10,14 +10,7 @@
 	<link rel="stylesheet" href="<?php bloginfo('template_url') ?>/css/style.min.css" type="text/css" media="screen" />
 	 <!-- Favicon
           –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-          <link rel="icon" type="image/png" href="<?php bloginfo('template_url') ?>/assets/images/favicon.png" />
-
-
-
-	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-	<script src="<?php bloginfo('template_url') ?>/dist/all.min.js"></script>
-	<script src="https://use.fontawesome.com/59ab048164.js"></script>
-
+    <link rel="icon" type="image/png" href="<?php bloginfo('template_url') ?>/assets/images/favicon.png" />
 
 	<?php wp_head(); ?>
 

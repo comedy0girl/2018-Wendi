@@ -34,4 +34,10 @@
         </div>
         <?php wp_footer(); ?>
     </body>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="<?php bloginfo('template_url') ?>/dist/all.min.js"></script>
+	<script src="https://use.fontawesome.com/59ab048164.js"></script>
+
+    
 </html>
